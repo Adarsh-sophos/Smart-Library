@@ -1,5 +1,6 @@
 # Smart Library
 > Library Inventory Building
+>
 > Retrieval System
 
 - Managing books in a large bookshelf and ﬁnding books on it often leads to tedious manual work, especially for large book collections where books might be missing or misplaced.
@@ -12,20 +13,21 @@
 
 
 # Ideas
-- Use online amazon database to store recognized data and fetch data.
-- Can use string pattern matching for correcting book names. For it, we have to make a book database containing all books name OR use spelling correction or nearest Levenshtein distance matching against a dictionary to correct spellings.
 - After spine recognition, the user can select individual spines in the phone’s viewﬁnder to obtain more information about a particular book, without ever having to take that book off the bookshelf.
-- We can also have a database of images of book spine for every book and then use some image similarity measures between images, already stored in database and taken from a camera.
 - Use the digital compass and accelerometer on the smartphone to estimate location of the identified books. The digital compass tells us which direction the phone is facing when a book is photographed, while a temporal trace of the accelerometer informs us how far vertically and horizontally the phone has moved from the last anchor point.
 - Once the book is identiﬁed, additional stored information could also be retrieved, e.g. a short description of the book.
 - Indexing and searching from a book database.
 - Find the location of books on the bookshelves.
+- Use online amazon database to store recognized data and fetch data.
+- Make a database of images of book spine for every book and then use some image similarity measures between images, already stored in database and taken from a camera.
+- Can use string pattern matching for correcting book names. For it, we have to make a book database containing all books name OR use spelling correction or nearest Levenshtein distance matching against a dictionary to correct spellings.
 
 
 # Book Spine Segmentation
 Book spine segmentation is a critical component of our system since each book is expected to be recognized, stored, and queried independently. 
 
 ## First Approach (Low-level Feature Based)
+
 
 ## Second Approach (CNN Based)
 Performance of most existing approaches is limited by book spine segmentation. Hand-craft features based book spine segmentation suffers from common image distortion and low contrast between books.
@@ -43,11 +45,13 @@ Two approaches -
 1. Image feature-based recognition pipeline - The image features of the book spine image are searched through a book spine image database.
 2. Text-based recognition pipeline - The text within the book spine image is recognized and used as keywords to search a book spine text database.
 
-# 1. Image Feature-based Retrieval (Book Spine Recognition)
-- Feature-based book spine recognition
-- Match the segmented spine against an online database of book spines.
+## 1. Image Feature-based Retrieval (Book Spine Recognition)
+- Construct a vocabulary tree using SURF features extracted from the database book spine images
+- From the query spine, extract SURF features and use them to match the spines to a database of book spine images using a vocabulary tree with soft binning.
+- A small set of top scoring candidates from the vocabulary tree are geometrically verified by estimating an afﬁne model between the two spine images using RANSAC to ﬁnd the total number of feature matches.
 
-# 2. Text-based Retrieval (Text Recognition)
+
+## 2. Text-based Retrieval (Text Recognition)
 ## 2.1 Text Localization
 A scene text detection algorithm is applied to each book spine our system obtains. This step detects words on the book spines, which provide detailed and useful information about the book.
 For text localization in a library environment, we use a book spine segmentation method based on Hough transform and scene text saliency. A state-of-the-art text localization method is subsequently applied to extract multi-oriented text information on a segmented book spine.
@@ -59,10 +63,18 @@ For text localization in a library environment, we use a book spine segmentation
 - We need to further decide whether a text line is upside down or not. To address this issue, train a CNN classiﬁer on 32 × 96 image patches.
 -  The binary classiﬁer tells us whether we need to flip the text lines in order to provide the text recognition module with a correct sequence.
 
+**Another approach**
+- Detect text in the extracted book spine image using a text detection algorithm based on Maximally Stable Extremal Regions (MSER) and Stroke Width Transform (SWT).
+-  MSERs are detected from the image and pruned using Canny edges, forming the character candidates.
+-   Stroke widths of the character candidates are found based on distance transforms.
+-   Then, they are pairwise linked together based on their geometric property to form text lines.
+-   The algorithm localizes the text within the book spine image and also ﬁlters out graphical components on the book spine. The localized text is then extracted from the book spine image and denoised using an edge-preserving ﬁlter. 
+
 ## 2.2 Text Recognition
 In this system, book spine images are identiﬁed based on the recognized text, which are then used as keywords for indexing or searching a book database. During the querying process, system only relies on text information without requiring the original spine images. 
 
 ### 2.2.1 OCR Based Approach
+- Distortions in real scene images make recognition a very different and challenging task from a standard OCR system.
 - OCR system, such as Tesseract (Smith, 2007), perform poorly on image taken of natural scenes
 
 ### 2.2.2 Deep Learning Based Approach
@@ -92,24 +104,31 @@ Use a per-timestep classiﬁcation loss in tandem with a revised version of the 
 
 
 ## 2.3 Text Search
-- Make a book spine text database using inverted ﬁles, commonly used in text retrieval systems.
+- Organize the book spine text database using inverted ﬁles, commonly used in text retrieval systems.
+- Construct a dictionary W using the text on the spines of the book title database.
+- From a query book spine image, read a set of query keywords. Use the keywords to search through the database. For each keyword, we ﬁnd a matching dictionary word. 
 - Two approaches to ﬁnd matching words
   1. Exact word matching
   2. Nearest neighbor word matching
-- Use tf-idf (term frequency-inverse document frequency). tf weights the word according to the number of occurrences within the spine text, and idf weights the score based on the how many different titles the word has occurred in.
+- Use tf-idf (term frequency-inverse document frequency) weighting. tf weights the word according to the number of occurrences within the spine text, and idf weights the score based on the how many different titles the word has occurred in.
 
+## Combining both the Results
+- Combine the results of the text-based recognition pipeline with the image feature-based recognition pipeline to form the ﬁnal result.
+-  A linear combination is used to combine them. For the text-based recognition pipeline, calculate score st(k) for database spine k. For the image feature-based recognition pipeline, the score si(k) for database spine k is the number of feature matches after geometric veriﬁcation.
+-  The hybrid score sh(k) for book spine k, is calculated by linearly combining scores from the two pipelines as follows:
+`sh(k) = st(k) + λ · si(k)`
 
-# Combining both the Results
-
-
-# Location Tracker
+## Location Tracker
 - Determine the locations of individual books, specifying which room, which bookshelf, and where in the bookshelf each recognized book can be found.
 
-# Experiments
+## Experiments
 -  During search, use tf-idf (term frequency-inverse document frequency) weights to rank returned results.
 -  Build search engine based on Apache Solr so that system scales well to large collection of books.
 -  Evaluate results using Reciprocal Rank (RR) which is deﬁned as: RR = 1/K, where K is the rank position of the ﬁrst relevant document (the target book spine in our case).
 -  Average Reciprocal Rank (MRR) across multiple queries should also be reported. All these measures are widely used by the information retrieval community.
+-  Spines with text that have generic fonts tend to be harder for the image feature-based system to recognize due to the similarity between visual features. However, character recognition on generic fonts has higher accuracy.
+-  On the other hand, spines with graphical components and cursive text are rather challenging to recognize text. In contrast, image features of these spines are fairly distinctive.
+-  For text-based spine recognition use NN word matching with the additional tf-idf weighting.
 -  Since the book collection contains books with very similar titles, even using groundtruth titles as keywords in search cannot guarantee 100% recall at top-1 rank position.
 
 #### Probelms
