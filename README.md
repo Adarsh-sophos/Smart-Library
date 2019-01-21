@@ -55,6 +55,7 @@ Two approaches -
 - Each of the segmented spines is individually matched against a database of book spines.
 - First, a set of scale and rotation-invariant features, or a bag-of-visual-features (BoVF), are extracted from each query spine.
 - Since achieving low query latency is very important for interactive book searches, we employ SURF features, which are much faster to compute than and offer comparable performance to SIFT features.
+- SURF features are extracted from each database spine image. The set of all database features is used to train a vocabulary tree with 6 levels and 106 leaf nodes.
 - For fast search through a large database of book spines, each query spine’s BoVF is quantized through a vocabulary tree. Soft binning is used to mitigate quantization errors.
 - The quantized BoVF of the query spine forms a tree histogram, counting how often each node in the vocabulary tree has been visited.
 - A similarity score between the query tree histogram and each database tree histogram is computed by histogram intersection, which can be performed efﬁciently using an inverted index.
@@ -90,7 +91,8 @@ In this system, book spine images are identiﬁed based on the recognized text, 
 
 ### 2.2.1 OCR Based Approach
 - Distortions in real scene images make recognition a very different and challenging task from a standard OCR system.
-- OCR system, such as Tesseract (Smith, 2007), perform poorly on image taken of natural scenes
+- OCR system, such as Tesseract (Smith, 2007), perform poorly on image taken of natural scenes.
+- Because the spines often contain non-text graphics, uneven illumination, and varying fonts, the OCR engine almost always gives unrecognizable text outputs. 
 
 ### 2.2.2 Deep Learning Based Approach
 Build a deep neural network-based scene text reading system. For text recognition, adopt a deep sequential labeling model based on convolutional and recurrent neural architectures.
@@ -135,7 +137,9 @@ Use a per-timestep classiﬁcation loss in tandem with a revised version of the 
 
 ## Location Tracker
 A location tracking algorithm infers each book’s location, at the time each photo is taken, from the gathered location data. Despite the availability of the smartphone’s sensor measurements, determining the precise location of each book is still challenging because these measurements are often noisy.
-The location of each book is inferred from the smartphone’s sensor readings, including accelerometer traces, digital compass measurements, and WiFi signatures. This location information is combined with the image recognition results to construct a location-aware book inventory. 
+- WiFi-based localization only provides 2D location coordinates excluding height, whereas for accurate book localization we require 3D coordinates.
+- The location of each book is inferred from the smartphone’s sensor readings, including accelerometer traces, digital compass measurements, and WiFi signatures. This location information is combined with the image recognition results to construct a location-aware book inventory.
+- The digital compass tells us which direction the phone is facing when a book is photographed, while a temporal trace of the accelerometer informs us how far vertically and horizontally the phone has moved from the last anchor point.
 - Determine the locations of individual books, specifying which room, which bookshelf, and where in the bookshelf each recognized book can be found.
 
 ## Experiments
