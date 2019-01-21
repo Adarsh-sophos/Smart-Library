@@ -4,6 +4,7 @@
 > Retrieval System
 
 - Managing books in a large bookshelf and ﬁnding books on it often leads to tedious manual work, especially for large book collections where books might be missing or misplaced.
+- Deployment of barcode and radio-frequency identiﬁcation (RFID) management systems is costly and affordable only to large institutions and it requires physically attaching a marker to each book.
 - Manually searching bookshelves is time-consuming and often not fruitful depending on how vague the search is.
 -  The intent of this system is to make what was previously a tedious experience (i.e., searching books in bookshelves) much more user-friendly.
 - Recently, deep neural models, such as Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN) have achieved great success for scene text detection and recognition.
@@ -24,10 +25,15 @@
 
 
 # Book Spine Segmentation
-Book spine segmentation is a critical component of our system since each book is expected to be recognized, stored, and queried independently. 
+Book spine segmentation is a critical component of our system since each book is expected to be recognized, stored, and queried independently.
+Recognizing book spines in a photo of a bookshelf is very challenging because each spine has a small surface area containing few image features and the other spines’ image features act as clutter in feature-based image matching.
 
 ## First Approach (Low-level Feature Based)
-
+- First, a Canny edge map is extracted from the query image. In the Canny edge map, the crevices between book spines appear as long and straight edges, while the text and graphics on the spines appear as short and curved edges.
+- Connected components are detected in the edge map, and all components containing fewer pixels than a lower threshold are removed.
+- Next, a Hough transform is calculated from the edge map with short edges removed. It is found that removal of short edges improves the resolution of peaks in the Hough transform.
+- To estimate the dominant angle θ<sub>spines</sub> of the spines, the Hough peak occurrences are binned in an angular histogram. The bin attaining the highest count in the angular histogram yields the spines’ dominant angle θ<sub>spines</sub>.
+- Given the dominant angle θ<sub>spines</sub> of the book spines, we search for long straight lines with angle near θ<sub>spines</sub>. Long straight lines can be detected from the Canny edge map.
 
 ## Second Approach (CNN Based)
 Performance of most existing approaches is limited by book spine segmentation. Hand-craft features based book spine segmentation suffers from common image distortion and low contrast between books.
@@ -46,9 +52,18 @@ Two approaches -
 2. Text-based recognition pipeline - The text within the book spine image is recognized and used as keywords to search a book spine text database.
 
 ## 1. Image Feature-based Retrieval (Book Spine Recognition)
-- Construct a vocabulary tree using SURF features extracted from the database book spine images
-- From the query spine, extract SURF features and use them to match the spines to a database of book spine images using a vocabulary tree with soft binning.
-- A small set of top scoring candidates from the vocabulary tree are geometrically verified by estimating an afﬁne model between the two spine images using RANSAC to ﬁnd the total number of feature matches.
+- Each of the segmented spines is individually matched against a database of book spines.
+- First, a set of scale and rotation-invariant features, or a bag-of-visual-features (BoVF), are extracted from each query spine.
+- Since achieving low query latency is very important for interactive book searches, we employ SURF features, which are much faster to compute than and offer comparable performance to SIFT features.
+- For fast search through a large database of book spines, each query spine’s BoVF is quantized through a vocabulary tree. Soft binning is used to mitigate quantization errors.
+- The quantized BoVF of the query spine forms a tree histogram, counting how often each node in the vocabulary tree has been visited.
+- A similarity score between the query tree histogram and each database tree histogram is computed by histogram intersection, which can be performed efﬁciently using an inverted index.
+- Thereafter, a shortlist of the 50 top-ranked database spines are further subjected to rigorous pairwise geometric veriﬁcation using the ratio test and afﬁne model RANSAC to ﬁnd spatial consistency between the feature matches.
+- The best matching database spine is then selected.
+
+[//]: <> (Construct a vocabulary tree using SURF features extracted from the database book spine images.
+From the query spine, extract SURF features and use them to match the spines to a database of book spine images using a vocabulary tree with soft binning.
+A small set of top scoring candidates from the vocabulary tree are geometrically verified by estimating an afﬁne model between the two spine images using RANSAC to ﬁnd the total number of feature matches.)
 
 
 ## 2. Text-based Retrieval (Text Recognition)
@@ -119,6 +134,8 @@ Use a per-timestep classiﬁcation loss in tandem with a revised version of the 
 `sh(k) = st(k) + λ · si(k)`
 
 ## Location Tracker
+A location tracking algorithm infers each book’s location, at the time each photo is taken, from the gathered location data. Despite the availability of the smartphone’s sensor measurements, determining the precise location of each book is still challenging because these measurements are often noisy.
+The location of each book is inferred from the smartphone’s sensor readings, including accelerometer traces, digital compass measurements, and WiFi signatures. This location information is combined with the image recognition results to construct a location-aware book inventory. 
 - Determine the locations of individual books, specifying which room, which bookshelf, and where in the bookshelf each recognized book can be found.
 
 ## Experiments
