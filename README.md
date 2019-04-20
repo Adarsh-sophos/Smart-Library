@@ -3,6 +3,24 @@
 >
 > Retrieval System
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Ideas](#ideas)
+- [Book Spine Segmentation](#book-spine-segmentation)
+  - [First Approach (Low-level Feature Based)](#first-approach-low-level-feature-based)
+  - [Second Approach (CNN Based)](#second-approach-cnn-based)
+- [Book Retrieval](#book-retrieval)
+  - [Image Feature-based Retrieval (Book Spine Matching)](#1-image-feature-based-retrieval-book-spine-matching)
+  - [Text-based Retrieval (Text Recognition)](#2-text-based-retrieval-text-recognition)
+    - [Text Localization](#21-text-localization)
+    - [Text Recognition](#22-text-recognition)
+    - [Text Search](#23-text-search)
+  - [Combining both the Results](#combining-both-the-results)
+- [Location Tracker](#location-tracker)
+- [Experiments](#experiments)
+
+## Introduction
 - Managing books in a large bookshelf and ﬁnding books on it often leads to tedious manual work, especially for large book collections where books might be missing or misplaced.
 - Deployment of barcode and radio-frequency identiﬁcation (RFID) management systems is costly and affordable only to large institutions and it requires physically attaching a marker to each book.
 - Manually searching bookshelves is time-consuming and often not fruitful depending on how vague the search is.
@@ -14,7 +32,7 @@
 
 ![Working](/src/images/Working.png)
 
-# Ideas
+## Ideas
 - After spine recognition, the user can select individual spines in the phone’s viewﬁnder to obtain more information about a particular book, without ever having to take that book off the bookshelf.
 - Use the digital compass and accelerometer on the smartphone to estimate location of the identified books. The digital compass tells us which direction the phone is facing when a book is photographed, while a temporal trace of the accelerometer informs us how far vertically and horizontally the phone has moved from the last anchor point.
 - Once the book is identiﬁed, additional stored information could also be retrieved, e.g. a short description of the book.
@@ -55,7 +73,7 @@ Two approaches -
 1. Image feature-based recognition pipeline - The image features of the book spine image are searched through a book spine image database.
 2. Text-based recognition pipeline - The text within the book spine image is recognized and used as keywords to search a book spine text database.
 
-## 1. Image Feature-based Retrieval (Book Spine Recognition)
+## 1. Image Feature-based Retrieval (Book Spine Matching)
 - Each of the segmented spines is individually matched against a database of book spines.
 - First, a set of scale and rotation-invariant features, or a bag-of-visual-features (BoVF), are extracted from each query spine.
 - Since achieving low query latency is very important for interactive book searches, we employ SURF features, which are much faster to compute than and offer comparable performance to SIFT features.
@@ -67,7 +85,7 @@ Two approaches -
 - Thereafter, a shortlist of the 50 top-ranked database spines are further subjected to rigorous pairwise geometric veriﬁcation using the ratio test and afﬁne model RANSAC to ﬁnd spatial consistency between the feature matches.
 - The best matching database spine is then selected.
 
-[//]: <> (Construct a vocabulary tree using SURF features extracted from the database book spine images.
+[//]: # (Construct a vocabulary tree using SURF features extracted from the database book spine images.
 From the query spine, extract SURF features and use them to match the spines to a database of book spine images using a vocabulary tree with soft binning.
 A small set of top scoring candidates from the vocabulary tree are geometrically verified by estimating an afﬁne model between the two spine images using RANSAC to ﬁnd the total number of feature matches.)
 
