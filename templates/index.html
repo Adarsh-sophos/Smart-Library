@@ -1,0 +1,106 @@
+
+{% extends "layout.html" %}
+
+
+{% block head %}
+<title> Search Inside Library </title>
+{% endblock %}
+
+
+
+{% block body %}
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="http://tphinkle.github.io">About Me</a></li>
+        <li><a href="http://github.com/tphinkle/shelfie">Shelfie Github page</a></li>
+        <li><a href="http://goo.gl/jxrsb5"> How does shelfie work? <span class="sr-only">(current)</span></a></li>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Background image -->
+<body background='/static/img/background.jpeg' height='100%'>
+
+    <!-- <div class='vertical-center'> -->
+
+    <!-- Logo -->
+    <div class="row top10bottom2">
+      <div class="col-lg-4 col-md-4"></div>
+
+      <div class="col-lg-4 col-md-4 center-block">
+        <img class='center-block img-responsive' src="/static/img/shelfie-logo.png"/ max-width='50%';>
+      </div>
+
+      <div class="col-lg-4 col-md-4"></div>
+
+    </div>
+
+
+    <!-- Form -->
+    <div class="container">
+
+      <div class="row">
+
+          <div class="col-xl-4 col-lg-4"></div>
+
+          <div class="col-xl-4 col-lg-4 text-center">
+
+            <form method = "POST" action='/' enctype = "multipart/form-data">
+             <input type = "file" class="form-control" name = "file" />
+             <button class="btn btn-primary glyphicon glyphicon-book" type="submit">  Submit</button>
+           </form>
+
+          </div>
+
+
+
+          <div class="col-xl-4 col-lg-4"></div>
+
+      </div>
+
+      <div class="row top5">
+
+        <div class="col-xl-4 col-lg-4"></div>
+
+        <div class="col-xl-4 col-lg-4 text-center">
+
+          <a class="link text-success" href="http://www.shelfie.site/submission/000000001/user">Example submission.</a>
+
+        </div>
+
+        <div class="col-xl-4 col-lg-4"></div>
+
+      </div>
+
+      <div class = "row top5">
+        <div class="col-xl-4 col-lg-4"></div>
+
+        <div class="col-xl-4 col-lg-4 text-center">
+
+          <button class="link text-success" id="instructions_link" style="text-decoration:underline; display: inline-block; background-color: Transparent; background-repeat: no-repeat; border: none; outline: none">Instructions</button>
+          <p id = "instructions" class="text-success" hidden>Snap a photo of your bookshelf using your smartphone; here's an example.
+            <img class='center-block img-responsive' src="/static/img/example-shelf.jpg"/ max-width='50%';>
+            The algorithm works best for spines that are vertically aligned.
+            Allow 2-3 minutes of processing depending on the size of your bookshelf.
+          </p>
+
+        </div>
+
+        <div class="col-xl-4 col-lg-4"></div>
+
+  </div>
+
+
+  <!-- </div> -->
+
+
+</body>
+
+<script type="text/javascript" src="/static/js/index.js"></script>
+
+
+{% endblock %}
