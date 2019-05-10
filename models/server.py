@@ -6,6 +6,7 @@ import json
 import os
 import pickle
 import sys
+import random
 
 # Scipy
 import numpy as np
@@ -105,7 +106,7 @@ def get_processed_image_path_from_submission_id(submission_id):
     '''
 
     # Get the directory of the raw_file file for the submission_id
-    file_path = main.BASE_PATH + '/data/submissions/' + submission_id + '/proc_img/proc_img.jpg'
+    file_path = main.BASE_PATH + '/data/submissions/' + submission_id + '/proc_img/proc_img_' + str(int(random.random()*1000)) + '.jpg'
 
     return file_path
 

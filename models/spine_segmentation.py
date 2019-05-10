@@ -262,8 +262,9 @@ def apply_hough_transform(img, image, min_votes, debug = False):
         actual_theta.append(t)
         #print(x1, y1, x2, y2, x0, y0, rho)
         #print(math.degrees(theta))
-        
-        if(t > 10 or t < -10):
+        #print(t)
+
+        if(t > 20 or t < -20):
             points.append([(x3, y3), (x4, y4), t])
 
             #cv2.line(output, (x1,y1), (x2,y2), (0,255,255), 2)
