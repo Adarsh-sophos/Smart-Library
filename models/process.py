@@ -13,7 +13,7 @@ import text_detection as td
 import scraper
 
 
-def full_pipeline(img_path, submission_id):
+def full_pipeline(img_path, submission_id = "000000000"):
     
     img_path = main.BASE_PATH + "/data/05.jpg"
     print(img_path)
@@ -130,3 +130,7 @@ def unpickle_all_books():
                 books.append(pickle.load(file_handle))
 
     return books
+
+
+if __name__ == '__main__':
+    full_pipeline("")

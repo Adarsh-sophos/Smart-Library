@@ -15,22 +15,26 @@ import feature_extraction_using_nn as feature_ext
 def test_spine_seg():
     path = main.BASE_PATH + "/data/query_images"
 
-    image_name = [file_name for file_name in os.listdir(path)]
+    image_names = sorted(os.listdir(path), key = lambda k : int(k.split('.')[0]))
 
     totol_spines_in_dataset = 0
 
     #print(file_name)
 
-    for image in image_name:
-        img_path = path + '/' + image
-        lines, image = seg.get_book_lines(img_path, "000000000", debug = False)
+    for (i, image) in enumerate(image_names):
+        print(image)
+
+        img_path = os.path.join(path, image)
+        lines, proc_img = seg.get_book_lines(img_path, "000000000", debug = False)
         totol_spines_in_dataset += len(lines) - 1
+
+        cv2.imwrite(main.BASE_PATH + "/data/submissions/000000000/proc_img/" + str(i+1) + ".jpg", proc_img)
 
     print(totol_spines_in_dataset)
 
     return totol_spines_in_dataset
 
-#test_spine_seg()
+test_spine_seg()
 
 
 def test_feature_extraction_accuracy_using_nn():
@@ -49,10 +53,12 @@ def test_feature_extraction_accuracy_using_nn():
 
     test_path = main.BASE_PATH + "/data/test_spines"
 
-    test_files = sorted(os.listdir(test_path))
+    test_files = sorted(os.listdir(test_path), key = lambda k : int(k.split('.')[0]))
     #print(test_files)
 
     model = models["ResNet50_model"]
+
+    correct = 0
 
     for test in test_files:
             
@@ -81,5 +87,12 @@ def test_feature_extraction_accuracy_using_nn():
         distances = np.sum((features_arr - trained) ** 2, axis = 1)
         min_index = np.argmin(distances)
         max_index = np.argmax(distances)
+
+        actual = int(test.split('.')[0])
+    
+        if(actual == min_index + 1):
+            correct += 1
         
-        print(test, min_index, distances[min_index], distances[max_index])
+        print(test, min_index + 1, distances[min_index], distances[max_index])
+
+    print(correct)

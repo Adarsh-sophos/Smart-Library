@@ -244,6 +244,7 @@ def apply_hough_transform(img, image, min_votes, debug = False):
     all_theta = []
     actual_theta = []
     points = []
+    temp_points = []
 
     for values in lines:
         rho, theta = values[0]
@@ -264,10 +265,32 @@ def apply_hough_transform(img, image, min_votes, debug = False):
         #print(math.degrees(theta))
         #print(t)
 
-        if(t > 20 or t < -20):
-            points.append([(x3, y3), (x4, y4), t])
+        #if(t > 65 or t < -65):
+        temp_points.append([(x3, y3), (x4, y4), t])
 
             #cv2.line(output, (x1,y1), (x2,y2), (0,255,255), 2)
+            #cv2.line(output, (x3,y3), (x4,y4), (0,255,255), 2)
+
+    theta_values = {}
+    for theta in actual_theta:
+        theta = np.abs(int(theta))
+        if(theta in theta_values.keys()):
+            theta_values[theta] += 1
+        else:
+            theta_values[theta] = 1
+
+    print(theta_values)
+
+    dominant_dir = max(theta_values, key=theta_values.get)
+
+    print("Dominant Direction", dominant_dir)
+    print()
+
+    for p in temp_points:
+        (x3, y3), (x4, y4), t = p
+
+        if(np.abs(int(t)) < dominant_dir + 10 and np.abs(int(t)) > dominant_dir - 10):
+            points.append([(x3, y3), (x4, y4), t])
             cv2.line(output, (x3,y3), (x4,y4), (0,255,255), 2)
         
     if(debug):
@@ -275,11 +298,11 @@ def apply_hough_transform(img, image, min_votes, debug = False):
 
         plot_img(output, type = "color")
 
-        plt.hist(all_theta, 360, [-180, 180])
-        plt.show()
+        #plt.hist(all_theta, 360, [-180, 180])
+        #plt.show()
 
-        plt.hist(actual_theta, 180, [-90, 90])
-        plt.savefig(main.BASE_PATH + "/data/theta.jpg")
+        #plt.hist(actual_theta, 180, [-90, 90])
+        #plt.savefig(main.BASE_PATH + "/data/theta.jpg")
 
         plt.show()
 
@@ -326,14 +349,55 @@ def merge_lines(points, image, debug = False):
         new_points.append([(int(sum_x1), points[l][0][1]), (int(sum_x2), points[l][1][1]), points[l][2]])
     
 
+    # MERGING FROM BOTTOM
+
+    #print(points)
+
+    pset = []
+
+    i = 0
+    while(i < len(new_points)):
+        t = []
+        
+        while(i < len(new_points)-1):
+            if(np.abs(new_points[i+1][1][0] - new_points[i][1][0]) <= 20):
+                t.append(i)
+                i += 1
+            else:
+                break
+            
+        t.append(i)
+        pset.append(t)
+        i += 1
+
+    new_points2 = []
+
+    for p in pset:
+        
+        sum_x1 = 0
+        sum_x2 = 0
+        
+        for l in p:
+            sum_x1 += new_points[l][0][0]
+            sum_x2 += new_points[l][1][0]
+        
+        sum_x1 /= len(p)
+        sum_x2 /= len(p)
+
+        new_points2.append([(int(sum_x1), new_points[l][0][1]), (int(sum_x2), new_points[l][1][1]), new_points[l][2]])
+    
+
+    if(image.shape[1] - new_points2[-1][0][0] >= 50):
+        new_points2.append([(image.shape[1]-5, 0), (image.shape[1]-5, image.shape[0]-1), 90])
+
     output = image.copy()
 
-    for p in new_points:
+    for p in new_points2:
         cv2.line(output, (p[0][0], p[0][1]), (p[1][0], p[1][1]), (0, 255, 255), 2)
 
     if(debug):
         print("Merge Lines", pset)    
-        print(new_points)
+        print(new_points2)
         plot_img(output, type = "color")
 
     return new_points, output
@@ -344,8 +408,8 @@ def get_book_lines(img_path, submission_id, debug = False):
     image = cv2.imread(img_path)
 
     #resize image
-    r = 1000.0 / image.shape[1]
-    dim = (1000, int(image.shape[0] * r))
+    r = 1024.0 / image.shape[1]
+    dim = (1024, int(image.shape[0] * r))
  
     # perform the actual resizing of the image and show it
     image = cv2.resize(image, dim, interpolation = cv2.INTER_AREA)
@@ -382,4 +446,4 @@ def get_book_lines(img_path, submission_id, debug = False):
     proc_file_path = server.get_processed_image_path_from_submission_id(submission_id)
     cv2.imwrite(proc_file_path, proc_img)
 
-    return lines, image
+    return lines, proc_img

@@ -206,13 +206,16 @@ def text_detection(image, net, submission_id, debug = False):
     #print(main.BASE_PATH)
     east = main.BASE_PATH + '/data/frozen_east_text_detection.pb'
     min_confidence = 0.5
-    width = 640
+    width = 768
     height = 128
-    padding = 0.05
+    padding = 0.02
 
     # load the input image and grab the image dimensions
     #image = cv2.imread(img)
     #image = imutils.rotate(image, 90)
+
+    #image = cv2.resize(image, (768, 128))
+
     orig = image.copy()
     (origH, origW) = image.shape[:2]
      
@@ -251,7 +254,8 @@ def text_detection(image, net, submission_id, debug = False):
 def text_detection_multi_image(spines, submission_id, debug = False):
 
     east = main.BASE_PATH + '/data/frozen_east_text_detection.pb'
-    print(east)
+    #print(east)
+    
     net = load_text_detector(east, debug)
     texts = []
 

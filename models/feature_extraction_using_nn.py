@@ -7,6 +7,7 @@ from keras.preprocessing import image
 import numpy as np
 import pandas
 
+import sys
 sys.path.append('..')
 import main
 

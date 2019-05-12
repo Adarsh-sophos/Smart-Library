@@ -18,7 +18,7 @@ class SQLHandle(object):
     # Define a database name (we're using a dataset on births, so we'll call it birth_db)
     # Set your postgres username/password, and connection specifics
     username = 'postgres'
-    password = 'password'     # change this
+    password = 'redhat'     # change this
     host     = 'localhost'
     port     = '5432'            # default port that postgres listens on
     db_name  = 'book_info'

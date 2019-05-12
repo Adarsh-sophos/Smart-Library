@@ -21,10 +21,8 @@ sys.path.append('..')
 import main
 
 
-
 google_books_api_key = 'AIzaSyBueagspvDe8R-prJ3bmqtEnr7fPTH10Xo'
 goodreads_api_key = 'ooiawV83knPQnQ8If3eiSg'
-
 
 
 def get_page_soup(url):
@@ -176,7 +174,7 @@ def query_goodreads_api(isbn10, debug = False):
         pass
         if debug:
             print('Could not find goodreads id')
-            return book_info
+        return book_info
 
 
     # Query for book info
@@ -253,7 +251,6 @@ def query_google_books_api(book_data, type = "isbn", debug = False):
     content = json.loads(response.content.decode('utf-8'))
 
     book_info = {}
-    #book_info['isbn10'] = isbn10
 
     # Get title
     try:
@@ -266,7 +263,6 @@ def query_google_books_api(book_data, type = "isbn", debug = False):
     # Get authors
     try:
         book_info['authors'] = content['items'][0]['volumeInfo']['authors']
-
     except:
         pass
         if debug:
@@ -276,33 +272,47 @@ def query_google_books_api(book_data, type = "isbn", debug = False):
 
     try:
         book_info['publisher'] = content['items'][0]['volumeInfo']['publisher']
-
     except:
         pass
         if debug:
             print('Could not find book publisher')
 
+    try:
+        book_info['publishedDate'] = content['items'][0]['volumeInfo']['publishedDate']
+    except:
+        pass
+        if debug:
+            print('Could not find book published date')
 
+    '''
+    try:
+        book_info['description'] = content['items'][0]['volumeInfo']['description']
+    except:
+        pass
+        if debug:
+            print('Could not find book description')
+    '''
 
     # Get isbn10
     try:
-        book_info['isbn10'] = content['items'][0]['volumeInfo']['industryIdentifiers'][0]['identifier']
+        isbns = content['items'][0]['volumeInfo']['industryIdentifiers']
+
+        if(isbns[0]["type"] == "ISBN_10"):
+            book_info['isbn10'] = isbns[0]['identifier']
+
+        elif(isbns[0]["type"] == "ISBN_13"):
+            book_info['isbn13'] = isbns[0]['identifier']
+
+        if(isbns[1]["type"] == "ISBN_10"):
+            book_info['isbn10'] = isbns[1]['identifier']
+
+        elif(isbns[1]["type"] == "ISBN_13"):
+            book_info['isbn13'] = isbns[1]['identifier']
 
     except:
         pass
         if debug:
-            print('Could not find book isbn10')
-
-
-    # Get isbn-13
-    try:
-        book_info['isbn13'] = content['items'][0]['volumeInfo']['industryIdentifiers'][1]['identifier']
-
-    except:
-        pass
-        if debug:
-            print('Could not find book isbn13')
-
+            print('Could not find book ISBN 10 or 13')
 
     return book_info, content
 
@@ -629,10 +639,8 @@ def query_amazon_products_api(isbn10, amazon, debug = False):
         if debug:
             print('could not find price info! (amazon products)')
 
-
-
-
     return book_info, price_info
+
 
 class AmazonPrice(object):
     categories = ['Great', 'Fair', 'Poor']
@@ -647,8 +655,6 @@ class AmazonPrice(object):
         # Calculate means
         #self.price_mean = np.mean(self.prices)
         #self.shipping_prices_mean = np.mean(self.shipping_prices)
-
-
 
 
 def get_prices_from_sales_page_soup(soup):
@@ -680,8 +686,6 @@ def get_prices_from_sales_page_soup(soup):
         except:
             quality = 'NONE'
 
-
-
         # Append to lists
         if price != 0:
             prices.append(float(price))
@@ -692,12 +696,10 @@ def get_prices_from_sales_page_soup(soup):
     return prices, shipping_prices, qualities
 
 
-
 def get_prices_from_amazon_products(isbn, amazon):
     '''
     Returns a AmazonPrice object, an object that stores the pricing information for a book
     '''
-
 
     response = amazon.ItemLookup(ItemId=str(isbn), ResponseGroup="Offers",
     SearchIndex="Books", IdType="ISBN")
