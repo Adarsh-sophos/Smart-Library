@@ -8,8 +8,63 @@ import matplotlib.pyplot as plt
 from imutils.object_detection import non_max_suppression
 
 sys.path.append('../')
+sys.path.append('crnn_pytorch/')
+
 import main
 import server
+
+import torch
+from torch.autograd import Variable
+import utils
+import dataset
+from PIL import Image
+
+import crnn_pytorch.models.crnn as crnn
+
+
+model_path = 'crnn_pytorch/data/crnn.pth'
+alphabet = '0123456789abcdefghijklmnopqrstuvwxyz'
+
+model = crnn.CRNN(32, 1, 37, 256)
+if torch.cuda.is_available():
+    model = model.cuda()
+print('loading pretrained model from %s' % model_path)
+model.load_state_dict(torch.load(model_path))
+
+
+def text_recognition(image):
+    orig_img = image.copy()
+
+    image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+    image = Image.fromarray(image)
+
+    converter = utils.strLabelConverter(alphabet)
+
+    transformer = dataset.resizeNormalize((100, 32))
+    #image = Image.open(img_path).convert('L')
+    
+    image = transformer(image)
+    if torch.cuda.is_available():
+        image = image.cuda()
+    image = image.view(1, *image.size())
+    image = Variable(image)
+
+    model.eval()
+    preds = model(image)
+
+    _, preds = preds.max(2)
+    preds = preds.transpose(1, 0).contiguous().view(-1)
+
+    preds_size = Variable(torch.IntTensor([preds.size(0)]))
+    raw_pred = converter.decode(preds.data, preds_size.data, raw=True)
+    sim_pred = converter.decode(preds.data, preds_size.data, raw=False)
+    #print('%-20s => %-20s' % (raw_pred, sim_pred))
+    
+    #print(sim_pred)
+    #plt.imshow(orig_img)
+    #plt.show()
+    
+    return sim_pred
 
 
 def load_text_detector(east, debug = False):
@@ -144,8 +199,11 @@ def get_bounding_boxes(orig_image, boxes, rW, rH, padding, origW, origH, submiss
         # treating the ROI as a single line of text
         config = ("-l eng --oem 1 --psm 7")
         #roi = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
-        text = pytesseract.image_to_string(roi, config=config)
+        #text = pytesseract.image_to_string(roi, config=config)
+
+        text = text_recognition(roi)
         
+        """
         temp = ""
         for c in text:
             if((ord(c) <= 122 and ord(c) >= 97) or (ord(c) <= 90 and ord(c) >= 65)):
@@ -154,6 +212,7 @@ def get_bounding_boxes(orig_image, boxes, rW, rH, padding, origW, origH, submiss
                 temp += ""
 
         text = temp
+        """
         
         if(debug):
             plt.imshow(roi)

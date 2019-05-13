@@ -21,7 +21,7 @@ sys.path.append('..')
 import main
 
 
-google_books_api_key = 'AIzaSyBueagspvDe8R-prJ3bmqtEnr7fPTH10Xo'
+google_books_api_key = 'AIzaSyDNDbI0iR7hFHPiSOwj39RqEih8Ca0AOP8'
 goodreads_api_key = 'ooiawV83knPQnQ8If3eiSg'
 
 

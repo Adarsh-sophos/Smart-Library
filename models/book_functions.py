@@ -110,8 +110,21 @@ class Spine(object):
 
     def set_spine_words(self, words):
         # Store the ordered words
-        ys = np.array([word.bounding_box.center[0] for word in words])
-        ordered_words = [words[i] for i in np.argsort(ys)]
+        xs = np.array([word.bounding_box.center[0] for word in words])
+        ordered_words = [words[i] for i in np.argsort(xs)]
+
+        for i in range(len(ordered_words)-1):
+            b1_x = ordered_words[i].bounding_box.center[0]
+            b1_y = ordered_words[i].bounding_box.center[1]
+            b2_x = ordered_words[i+1].bounding_box.center[0]
+            b2_y = ordered_words[i+1].bounding_box.center[1]
+
+            if(np.abs(b2_x - b1_x) < 20):
+                if(b1_y > b2_y):
+                    #print(ordered_words[i].string, ordered_words[i+1].string)
+                    ordered_words[i], ordered_words[i+1] = ordered_words[i+1], ordered_words[i]
+                    #print(ordered_words[i].string, ordered_words[i+1].string)
+
         self.words = ordered_words
 
         # Format the words as a sentence

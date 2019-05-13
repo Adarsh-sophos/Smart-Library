@@ -16,7 +16,7 @@ import scraper
 
 def evaluate_performace(submission_id = "000000000"):
     
-    fp = open(main.BASE_PATH + "/data/predicted_titles.txt", "w")
+    fp = open(main.BASE_PATH + "/data/reconginzed_title.txt", "w")
 
     dir_path = os.path.join(main.BASE_PATH, "data/training")
     spine_image_names = sorted(os.listdir(dir_path), key = lambda k : int(k.split('.')[0]))
@@ -25,7 +25,7 @@ def evaluate_performace(submission_id = "000000000"):
 
     for image_name in spine_image_names:
         print(image_name)
-        fp.write(image_name + "\n")
+        #fp.write(image_name + "\n")
 
         img_path = os.path.join(dir_path, image_name)
 
@@ -65,6 +65,9 @@ def evaluate_performace(submission_id = "000000000"):
 
         print(search_query)
 
+        fp.write(search_query + "\n")
+
+        '''
         search_url = scraper.get_google_search_url_from_query(search_query)
         print(search_url)
 
@@ -85,11 +88,37 @@ def evaluate_performace(submission_id = "000000000"):
 
         book_info, content = scraper.query_google_books_api(isbn10, type = "isbn", debug = False)
         book_info['api'] = 'Amazon and Google Books API'
+        '''
 
         #print(book_info)
+
+        #if(content["totalItems"] == 0):
+        
+        '''
+        book_info, content = scraper.query_google_books_api(search_query, type = "title", debug = False)
+        book_info['api'] = 'Google Books API'
+
         if(content["totalItems"] == 0):
-            book_info, content = scraper.query_google_books_api(search_query, type = "title", debug = False)
-            book_info['api'] = 'Google Books API'
+            search_url = scraper.get_google_search_url_from_query(search_query)
+            print(search_url)
+
+            # Get first amazon link from google search url
+            amazon_url = scraper.get_amazon_url_from_google_search(search_url)
+            print(amazon_url)
+
+            if amazon_url != None:
+                isbn10 = scraper.get_isbn10_from_amazon_url(amazon_url, debug = True)
+
+            else:
+                # Couldn't get isbn10 from amazon link (or there was no amazon link)
+                isbn10 = None
+
+            if not scraper.is_isbn10(isbn10):
+                print(isbn10, "is not a right ISBN.")
+
+            else:
+                book_info, content = scraper.query_google_books_api(isbn10, type = "isbn", debug = False)
+                book_info['api'] = 'Amazon and Google Books API'
 
         print(book_info)
 
@@ -106,6 +135,8 @@ def evaluate_performace(submission_id = "000000000"):
         book = book_functions.Book(book_info, spine)
 
         books.append(book)
+        '''
+        print()
 
     fp.close()
 
