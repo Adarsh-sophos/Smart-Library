@@ -1,32 +1,2484 @@
-1.jpg
-2.jpg
+1
+min fulse han digital and switching waveforms editic suryaprakashi jacob herbert rao millman taub mothiki
+Pulse, Digital, and Switching Waveforms
+Herbert Traub
+
+2
+streetman baneriee solid electronic state sixth devices edition
 Solid State Electronic Devices
 Ben G. Streetman,Sanjay Banerjee
 
-3.jpg
-Recognized Text: mia Intel NICroorocessors IGH PEARSON 
+3
+the intel licroprocessors ight pearson
+Upgrading And Repairing Pcs, 19/E (Dvd)
+Mueller Scott
 
-4.jpg
-Molecular and Laser Spectroscopy
-V.P. Gupta
+4
+belove oling circuits geelectronic
+Electronic Measurement and Instrumentation
+Klaas B. Klaassen
 
-5.jpg
-Applications of analog integrated circuits
+5
+analog applications gintegrated and design dcircuits with pnr pt
+Design and Applications of Analog Integrated Circuits
 Sidney Soclof
 
-6.jpg
-7.jpg
-Recognized Text: asidament  Circuits Seen PEARSON 
+6
+fiber opticsand opioelectronics phare oxford
+None
+None
 
-8.jpg
-9.jpg
-Recognized Text: Kylee Tammunication Principles ey Systems alsebe celaate Bs Chillin 
+7
+condmentals isofanalog circuits san pearson
+Electronic Devices And Circuits, 6/E (With Cd)
+Bogart
 
-10.jpg
-Hydroxyapatite and Other Calcium Orthophosphates
-Sergey V. Dorozhkin
+8
+vv digital uundamentals comm and unicati applications ations educatio
+Reforming Teaching and Teacher Education
+Eija Kimonen,Raimo Nevalainen
 
-11.jpg
-Recognized Text: DIGITAL COMPLITERB SIGNAL yete mmaie 
+9
+jaubs communication principles o1 systems hirdediti b aaa schillin
+None
+None
 
-12.jpg
+10
+haxryszkiews wycz systems introduct nalysis tion and t design
+None
+None
+
+11
+digital computerb signal approach processing
+Digital Signal Processing
+Sanjit Kumar Mitra
+
+12
+ottershead electronic an devices introduction and circuits
+Introduction to Electronic Devices and Circuits
+Robert R. Ludeman
+
+13
+vlsi seconde ctioness technology dit
+Works
+Francis Bacon
+
+14
+anaci aralhan systems telecommunication and networks switching t
+TELECOMMUNICATION SWITCHING SYSTEMS AND NETWORKS
+THIAGARAJAN VISWANATHAN,MANAV BHATNAGAR
+
+15
+electronic adapplications amentals
+Electronic Fundamentals
+Philip E. Wheeler
+
+16
+wireless and networkings communications
+Wireless Communications & Networking
+Vijay Garg
+
+17
+aconcisel introduction matlab
+Getting Started with MATLAB 7
+Rudra Pratap
+
+18
+microprocessors fundamentals adelicrocontolles ram cni
+None
+None
+
+19
+elementso computernetorking narasimha karumanchi
+None
+None
+
+20
+dgd cmos analysis digital integrate design circuits 4t editl kangs eblebicn kim
+Cmos Digital Integrated Circuits
+Sung-Mo Kang,Yusuf Leblebici
+
+21
+y lumis tlines programminghy with second edition
+None
+None
+
+22
+tanenbaum woodhull design operating land implementation isystems edition coron
+Lasers and Electro-optics
+Christopher C. Davis
+
+23
+koutroum pattern recognition adl
+None
+None
+
+24
+ftware gineering tatapproach aprocitionert pressman
+Software Engineering
+Roger S. Pressman
+
+25
+znity fundamental algorithms
+Essential Algorithms
+Rod Stephens
+
+26
+krishna kint industrialo computerbased lcontrol second
+Leading an Academic Medical Practice
+Lee Bach Lu,Ernie-Paul Barrette,Craig Noronha,Halle G. Sobel,Daniel G. Tobin
+
+27
+vji insimulation and analysis modeling law
+Simulation Modeling And Analysis (sie)
+Law
+
+28
+deb barne and motionand dmeasurement estudy itofwork design sevente edition
+Motion and time study
+Ralph Mosser Barnes
+
+29
+8051 microcontroller ayala 3rd edition cengage learning
+The 8051 Microcontroller
+Kenneth J. Ayala
+
+30
+entonakos an computer introduction networking to
+Computer Networks
+Tanenbaum
+
+31
+42th dorf and circuits systems devices fifth edition 5g3t
+Circuits, devices, and systems
+Ralph Judson Smith,Richard C. Dorf
+
+32
+givargi embeddeds system design
+Embedded System Design
+Frank Vahid,Tony Givargis
+
+33
+jc the java languagethire programming edition
+Learn Java the Easy Way
+Bryson Payne
+
+34
+cumpltera andlogic design
+Computer Architecture and Logic Design
+Thomas C. Bartee
+
+35
+viico lam sethi ullman principles compilers techniquesa and tools decond edition pearson
+Compilers
+Alfred V. Aho,Ravi Sethi
+
+36
+frey kil neulaner jocn coding theory land algorithms architectures applications
+The Complete Hothead Paisan
+Diane DiMassa
+
+37
+saa ioutse teache active server pages
+Sams Teach Yourself Active Server Pages in 24 Hours
+Christoph Wille,Christian Koller
+
+38
+pearson consumerbe behavior leventh edition wisenblit kumat
+Fashion Retailing: A Multi-Channel Approach (Dvd)
+Diamond
+
+39
+a a kahate web technologies second edition
+Web Technologies: Tcp/ip to Internet Application Architectures
+Achyut S. Godbole,Achyut S Godbole Atul Kahate
+
+40
+distributed mlgorithms
+Distributed Window Systems
+Allan Davison
+
+41
+introduction omicroprocessors to third edition mathur
+The 80251 Microcontroller
+Kenneth J. Ayala
+
+42
+ardiy hiberschaiz esuarshan korth database system concepts third edition
+Database Systems: The Complete Book
+Hector Garcia-Molina
+
+43
+q9 pearson computer networks tanenbaum wetherall
+Computer Networks
+Tanenbaum
+
+44
+wungs aodure the isossso1 6ar96806681 icroprocessors dthel epentiumin family
+None
+None
+
+45
+junix das and concepts applications fourt edition
+Unix Concepts And Applications 4th Edition
+Sumitabha Das
+
+46
+aachbilel communications decna edit pearson
+None
+None
+
+47
+advanced and peripherals microprocessors ray bhurchandi
+ADVANCED MICROPROCESSORS & PERIPHERALS
+BHURCHANDI
+
+48
+be data andcomputer communications editic
+Data and Computer Communications
+William Stallings
+
+49
+the intel microprocessors eight pearson
+The Intel Microprocessors: Pearson New International Edition
+Barry B. Brey
+
+50
+the amicroprocessors eages
+Raspberry Pi Projects
+Andrew Robinson,Mike Cook
+
+51
+w operating modern systems third editi pences
+The Gentleman's Stable Directory: or, Modern system of farriery, etc. (The eleventh edition, with very considerable additions.) With plates
+William Taplin
+
+52
+venzweig oracle plsqlye example tin pearson
+None
+None
+
+53
+proa bauch dlehi modern systems jsing communication matlab 3rd edition cengage leaming
+Contemporary Communication Systems Using MATLAB
+John G. Proakis,Masoud Salehi,Gerhard Bauch
+
+54
+kain systemsd advanced desian tecture napproaches computer
+Advanced Computer Architecture
+Kain,Richard Y. Kain
+
+55
+forouzan and data networking communications
+Data Communications and Networking
+Behrouz A. Forouzan
+
+56
+wang and computer parallel architecture uprocessing cd s j ps
+Proceedings of the ... Inernational Symposium on Parallel Architectures, Algorithms, and Networks (ISPAN).
+Guo-Jie Li
+
+57
+circuit simulation design with and vhdl pis
+Circuit Design with VHDL
+Volnei A. Pedroni
+
+58
+asat ques and digital system icroprocessors design
+Computer Organisation
+D.A.Godse A.P.Godse
+
+59
+namser datami mining edition
+Principles of Data Mining
+David J. Hand,Heikki Mannila,Professor in the Department of Statistics David J Hand,Padhraic Smyth
+
+60
+vtn neural intoductionis artificial systems
+Artificial Neural Systems: Principle and Practice
+Pierre Lorrentz
+
+61
+theory of zeigler modeling praehofer and kim simulation
+Theory of Modeling and Simulation
+Bernard P. Zeigler,Tag Gon Kim,Herbert Praehofer
+
+62
+introduction microprocessors to third edition mathur
+Introduction to Microprocessors
+A. P. Mathur
+
+63
+joilings data and communications dcomputar 2ighth pearson
+None
+None
+
+64
+jonil neurali networks second edilion
+Deep Learning
+Ian Goodfellow,Yoshua Bengio,Aaron Courville
+
+65
+sr the ofcomputer design algorithms manalysis
+Computer algorithms : introduction to design and analysis
+Sara Baase
+
+66
+br vr nomas informations elements of theory second edition
+Elements of Information Theory
+Thomas M. Cover,Joy A. Thomas
+
+67
+computer organization
+Computer Organization And Architecture
+A.P.Godse,D.A.Godse
+
+68
+algorithmss neuraln networks applicationst and programming techniques freeman skapura
+Neural Networks: Algorithms, Applications, And Programming Techniques
+Freeman
+
+69
+chaparro using signals and matlab systems ped iniatly
+Signals and Systems Using MATLAB
+Luis Chaparro,Aydin Akan
+
+70
+and artifcial intelligent intelligence systems sst oxford
+Artificial-Intelligence-based Electrical Machines and Drives
+Peter Vas
+
+71
+jej kl microprocessors advanced and peripherals n ray bhurchandi
+ADVANCED MICROPROCESSORS & PERIPHERALS
+BHURCHANDI
+
+72
+tans introductions database systems
+An Introduction to Database Systems
+C. J. Date
+
+73
+falvino digtalcomputer electronics third edition izzz ticd
+None
+None
+
+74
+linch distributed ealgorithms
+Distributed Algorithms
+Nancy A. Lynch
+
+75
+xgl albright develo eloping decision vba support for systems with modelers imicrosoft office excels third edition learning cengage
+VBA for Modelers: Developing Decision Support Systems
+S. Christian Albright
+
+76
+and the lts internet protocols
+Network Protocols
+Geng Liang
+
+77
+bartee digital computer fundamentals sixth edition
+Digital Computer Fundamentals
+Bartee
+
+78
+sced system simulation with digital computer prenticel
+System Simulation With Digital Computer
+Narsingh Deo
+
+79
+geral ananthasureshe nan vinoy microand smarts systems
+Stochastic Calculus for Finance
+
+80
+bzu gibsont architecture the microcomouter 308618038 programmingls and family systems design
+Microcomputer Systems: The 8086/8088 Family: Architecture Programming And Design 2Nd Ed.
+Liu & Gibson
+
+81
+288 enzwaig oracle plsqloy example 1th pearson
+None
+None
+
+82
+theory of zeigler modelina praehofer and kim simulation
+Handbook of Research on Discrete Event Simulation Environments: Technologies and Applications
+Abu-Taieh, Evon M. O.
+
+83
+yan son weiss data algorithma structures manalysis and in second edition
+Data Structures and Algorithm Analysis in C++
+Weiss
+
+84
+iggse and computer parallel architecture processing dd js tx ms
+Cambridge IGCSE Computer Science
+David Watson,Helen Williams
+
+85
+earoni circuit simulation design with and vhdl besned editio
+Circuit Design with VHDL
+Volnei A. Pedroni
+
+86
+computer architecture and organization cdge
+Computer Architecture
+John L. Hennessy,David A. Patterson
+
+87
+lewis apadimurio emenisofthe heory compi utation second edition prentice india hall
+None
+None
+
+88
+ngs internals operating and design systems principles pffifh eedition prentice
+NGS: The Garden Visitor's Handbook 2017
+The National Gardens Scheme (NGS)
+
+89
+wyli cormens eisersony rivest stein introduct ctiont lgorithms
+Introduction to Algorithms
+None
+
+90
+pcoes rross atopdown computer approach featuring networking the internet thira eanion
+Computer Networking
+James F. Kurose,Keith W. Ross
+
+91
+arris aldesigna computer architecture scond
+Introduction to discrete structures
+Shari Lawrence Pfleeger,David W. Straight
+
+92
+microprocessors and interfacing
+Microprocessors and Interfacing
+N Senthil Kumar,M Saravanan,S Jeevananthan,Satish Shah
+
+93
+sat fundamentals seconde algorithms sof nneditions computer yp
+None
+None
+
+94
+godb bory kahate web technologies second edition grawl
+Anthems of Resistance
+Ali Husain Mir ,Raza Mir
+
+95
+pe thei lintel architecture programmingla microprocessor andinterfaking 8086 3043 spentiom 3088 8801 ntium pentiumu 1861 180188 nle jand 80286 roces pentiuma cessori 30386
+The Intel microprocessors
+Barry B. Brey
+
+96
+unix interprocess network programming communications volume edition
+UNIX Network Programming: Interprocess communications
+W. Richard Stevens
+
+97
+15th eaition letusc kanetkar yashavant
+LET US C SOLUTIONS.
+YASHAVANT. KANETKAR
+
+98
+pas dehon computing econfigurable nou r
+Reconfigurable Computing: Architectures, Tools and Applications
+Phaophak Sirisuk,Fearghal Morgan,Tarek El-Ghazawi,Hideharu Amano
+
+99
+peaf scn p harro problem solving with
+Applying Educational Research
+M. D. Gall,Joyce P. Gall,Walter R. Borg
+
+100
+arrow problem programming solving with dreamlech n
+NEURAL NETWORKS, FUZZY LOGIC AND GENETIC ALGORITHM
+S. RAJASEKARAN,G. A. VIJAYALAKSHMI PAI
+
+101
+efani hahian design control of systems feedback fourth edition xforis
+Design of feedback control systems
+G. H. Hostetter,C. J. Savant,Raymond T. Stefani
+
+102
+advanced and peripherals microprocessors ray bhurchandi
+ADVANCED MICROPROCESSORS & PERIPHERALS
+BHURCHANDI
+
+103
+rahous kiews systems analysi introductions and design
+Systems Analysis and Design
+Alan Dennis
+
+104
+problem sprogramming solving with dreamlech
+Think Like a Programmer
+V. Anton Spraul
+
+105
+esurity informations manacement metrics systems frameworks and best security practices
+INFORMATION SYSTEMS SECURITY: SECURITY MANAGEMENT, METRICS, FRAMEWORKS AND BEST PRACTICES (With CD )
+Nina Godbole
+
+106
+vey fundamentals mage processin ofdigital
+Fundamentals of Digital Image Processing
+Chris Solomon,Toby Breckon
+
+107
+pearson network cryptography isecurity and  cntg
+Quotemanship
+Paul F. Boller
+
+108
+pearson comer ian computer and internets networks
+Computer Networks and Internets
+Douglas Comer
+
+109
+ian tanenbaum steen distributed principles and paradigms systems nd edition
+Distributed Systems
+Andrew S. Tanenbaum,Maarten van Steen
+
+110
+rogrammings third pragmatics edition llanguage scott 2z7
+Programming Language Pragmatics
+Michael Lee Scott
+
+111
+anand kumar digital signal uprocessing
+DIGITAL SIGNAL PROCESSING
+A. ANAND KUMAR
+
+112
+saderae technical lareaders centerelas communication blapproacht wadsworth
+None
+None
+
+113
+softwares practitioners engineering approach cdrs
+Software Engineering
+Roger S. Pressman
+
+114
+an database introduction systems to iates date wesley 4474
+An Introduction to Database Systems
+C. J. Date
+
+115
+trwd inciples interne protocols tcpiip tworki ing saandi with pdarchitectu jre pr
+Data Communications and Networking
+Behrouz A. Forouzan,Catherine Ann Coombs,Sophia Chung Fegan
+
+116
+jebel fourth the 8088 and microprocessors 8086 software hardware interfacingy programming applications eand pearson educations
+The 8088 And 8086 Microprocessors: Programming,Interfacing,Software,Hardware And Applications, 4/E
+Triebel
+
+117
+q0 km an to engineering digital design approach je
+An Engineering Approach to Digital Design
+William I. Fletcher
+
+118
+pearson comer computer and unternets networks
+Computer Networks and Internets
+Douglas E. Comer
+
+119
+bentle strtute press computer hydraulic connect applications theory engineering practice
+Computer Applications in Hydraulic Engineering
+Haestad Methods, Inc
+
+120
+oet introduction information technology prentice mndla hall
+Introduction to Computers and Information Technology
+Emergent Learning
+
+121
+gaonkar architecture programming annlications microprocessor with and the 8085 sixth dition penkam
+Microprocessor Architecture Programming and Applications with the 8085, Atilim University Library, 2002
+Ramesh S. Gaonkar - Prentice Hall Pearson Education
+
+122
+malvino brown digalcomputer electronics thirdratios
+Digital Computer Electronics
+Albert Paul Malvino,Jerald A. Brown
+
+123
+hedition software engineering sommerville pearso education
+Software Engineering
+Sommerville
+
+124
+inders avala wireless antennas and isconmunication propagation systems for stn
+None
+None
+
+125
+pe hpi deitel n internet how to world program wide web
+The Internet and the World Wide Web
+Robert T. Grauer,Maryann Barber
+
+126
+electronic and applications fundamental
+Electronics (fundamentals And Applications)
+D. Chattopadhyay
+
+127
+olnna de mass principlest and operations transfer
+Mass Transfer
+A. P. SINHA,PARAMESWAR DE
+
+128
+discrete structures emathematical sixth
+Mathematical Structures for Computer Science
+Judith L. Gersting
+
+129
+millmanis integrated electronics secona edition halkias millman parikh
+Millman'S Integrated Electronics 2E
+Millman
+
+130
+ctx pato stewan lightfoo transport phenomena second edition wile
+Transport Phenomena
+R. Byron Bird,Warren E. Stewart,Edwin N. Lightfoot
+
+131
+pearson introduction trodynamies lto griffiths
+OG to the PTE-A NE Pack
+PEARSON
+
+132
+nat plant design and economics tor chemical engineers
+Plant Design and Economics for Chemical Engineers
+Max Peters,Klaus Timmerhaus,Ronald West
+
+133
+basic engineering electrical second editio aa sukhij oxford
+Basic Electrical Engineering
+T. K. Nagsarkar,M. S. Sukhija
+
+134
+no vanathan systems telecommunication and networks switching
+TELECOMMUNICATION SWITCHING SYSTEMS AND NETWORKS
+THIAGARAJAN VISWANATHAN,MANAV BHATNAGAR
+
+135
+financial text problems pn management cises
+Financial Management: Text, Problems And Cases
+M. Y. Khan
+
+136
+taub principles communication of systems
+Principles Of Communication Systems
+Taub
+
+137
+managerial economics sevent ldition cate srivas at oxford
+Data Mining: Concepts and Techniques
+Jiawei Han,Jian Pei,Micheline Kamber
+
+138
+gaonkar architecture programmin annlications microprocessor with and ther 8085 sixth editio apenrams
+Microprocessor Architecture Programming and Applications with the 8085, Atilim University Library, 2002
+Ramesh S. Gaonkar - Prentice Hall Pearson Education
+
+139
+eventr editior programmingi ansi balagurusamy graw
+Object Oriented Programming With C++
+Balagurusamy
+
+140
+environmental elements science and engineering second edition
+ELEMENTS OF ENVIRONMENTAL SCIENCE AND ENGINEERING
+P. MEENAKSHI
+
+141
+water cenvironmentaly supply engineering yengineering volei sinciio ces
+None
+None
+
+142
+modern an introduction steel to making dr vr rh tupkary tupkary
+Modern Steel Making Handbook
+R. H. Tupkary,V. R. Tupkary
+
+143
+mechanical metallurgy
+Mechanical Metallurgy
+George Ellwood Dieter,David Bacon
+
+144
+rappaport wireless communications secona edito pearson
+Wireless Communications: Principles And Practice, 2/E
+Rappaport Theodore S.
+
+145
+vahid jivargis embedded system design
+EMBEDDED SYSTEM DESIGN: A UNIFIED HARDWARE/SOFTWARE INTRODUCTION
+Vahid
+
+146
+eation letusc kanetkar yashavant
+Let Us C
+Yashavant P. Kanetkar
+
+147
+with lppl stromagnetics ications
+None
+None
+
+148
+gaonkar architecture programming applicationsm microprocessor with and the 3085 meaths editi penram
+Microprocessor Architecture Programming and Applications with the 8085, Atilim University Library, 2002
+Ramesh S. Gaonkar - Prentice Hall Pearson Education
+
+149
+z6s rajan sharma sharma heat principles and treatment techniques da
+Heat Treatment
+T. V. Rajan,C. P. Sharma,Ashok Sharma
+
+150
+srivastava siness research emethodology
+Business Research Methodology (With Cd)
+Srivastava
+
+151
+machine coursed ectrical edesign ksawhne
+Electric Machinery Fundamentals
+Stephen Chapman
+
+152
+power ingineering asystem kothari nagrath
+Modern Power System Analysis
+D. P. Kothari,Kothari,I. J. Nagrath
+
+153
+pozar microwave engineering fourth edition
+Microwave Engineering
+David M. Pozar
+
+154
+power transmission hvdc systems kr padiyar
+HVDC Power Transmission Systems
+K. R. Padiyar
+
+155
+narayanan lakshmikutty process stoichiometry calculations and secon p sc
+CHEMICAL PROCESS CALCULATIONS
+D. C. SIKDAR
+
+156
+alanis antenna analysis and design theory hirdedition
+Antenna Theory
+Constantine A. Balanis
+
+157
+narayanan chemical engineering textbook thermodunamics sak
+A TEXTBOOK OF CHEMICAL ENGINEERING THERMODYNAMICS
+K. V. NARAYANAN
+
+158
+r control engineering systems jnagrath gopal
+Control Systems Engineering
+I.J. Nagrath
+
+159
+integrating services customer focus marketing acrosst firm s bitner
+Services Marketing
+Zeithaml
+
+160
+engineering circuit tanalysis
+Engineering Circuit Analysis
+William Hart Hayt,Jack Kemmerly,Steven M. Durbin
+
+161
+electric circuits editic nahvi edminister
+Schaum's Outline of Theory and Problems of Electric Circuits
+Joseph Edminister
+
+162
+van valkenburg etworkanalysis third edition
+Thinking Beyond the Tool
+Angeliki Chrysanthi,Patricia Murrieta Flores,Constantinos Papadopoulos
+
+163
+delonn xntting electrical amentals sand
+None
+None
+
+164
+006 basic circuit fifthedition electric analysis johnson johnson scott lburn
+Introduction To Electric Circuits (6Th Ed.)
+Dorf
+
+165
+pland jobbins converters power applications electronics and design
+Power electronics
+Ned Mohan,Tore M. Undeland
+
+166
+zze prasada electrical fundamentals of engineering third dition ceo
+Renewable Energy Resources
+John Twidell,Tony Weir
+
+167
+basic electrical engineering
+Basic Electrical Engineering
+Sahdev SK
+
+168
+stlets edition an introduction to the finite element method
+An Introduction to the Finite Element Method
+Junuthula Narasimha Reddy
+
+169
+steel design iof structures dr dayaratnam cy jzjz
+Design Of Steel Structures
+Pasala Dayaratnam
+
+170
+mathematical analysis apostol
+Mathematical Analysis
+Tom M. Apostol
+
+171
+peavy rowe tchobanoglous environmentaly engineering
+Environmental Engineering
+Howard S. Peavy,Donald R. Rowe,George Tchobanoglous
+
+172
+hoffman runze linear algebra second edition
+Linear Algebra
+Kenneth Hoffman,Ray Alden Kunze
+
+173
+peavy rowe tchobanoglous envronmentalin engineering
+Environmental Engineering
+Howard S. Peavy,Donald R. Rowe,George Tchobanoglous
+
+174
+crb apostol voll applicationst multl variable differen calculus calculus sand equations linear sandl algebral probability with snn pns
+Twelve Years a Slave
+Solomon Northup
+
+175
+mechanics istrength vol ofn materialsi ofstructures
+Mechanics of Materials and Structures
+George Z. Voyiadjis,L.C. Bank,L.J. Jacobs
+
+176
+anc modern physics beiser mahajan choudhury
+Concepts of Modern Physics
+Arthur Beiser
+
+177
+electronic devices and circuits nagrath
+ELECTRONIC DEVICES AND CIRCUITS
+I. J. NAGRATH
+
+178
+peavy rowe tchobanoglous engineering nvironmental odkie
+Environmental Engineering
+Howard S. Peavy
+
+179
+venkat embonentallatada policy
+Social Policy
+Jean Drèze
+
+180
+jang jox distributed and cloud acomputing
+Distributed and Cloud Computing
+Kai Hwang,Jack Dongarra,Geoffrey C. Fox
+
+181
+tano digitallogic and computer design pearson
+Digital logic and computer design
+M. Morris Mano
+
+182
+fluid hydraulic problems an mechanics olutions machines and subramanya
+1000 Solved Problems in Fluid Mechanics (includes Hydraulic Machines)
+K. Subramanya
+
+183
+programming principles and aradigms languages second
+Programming Languages: Principles and Paradigms
+Maurizio Gabbrielli,Simone Martini
+
+184
+unifled embedded hardwamtolwag system design introduction
+EMBEDDED SYSTEM DESIGN: A UNIFIED HARDWARE/SOFTWARE INTRODUCTION
+Vahid
+
+185
+pearson network cryptography isecurity and svents ln stallings atens
+Handbook of E-Business Security
+João Manuel R. S. Tavares,Manju Khari
+
+186
+electrical textbook of technology volume bl ak theraja theraja y jg
+A Textbook of Electrical Technology
+A. K. Theraja
+
+187
+pupy lat hillon power system optimization second
+Contemporary Engineering Economics
+Chan S. Park,Ron Pelot,Kenneth C. Porteous,Ming J. Zuo
+
+188
+microprocessors fundamentals and deicrocontrollers bam cnes
+None
+None
+
+189
+oe nbaum modern toperatings systems
+Mass Spectrometry and NMR Spectroscopy in Pesticide Chemistry
+Rizwanel Haque
+
+190
+babin carr ankar business south asian research perspective methods cengage learning
+BCOM
+Carol M. Lehman,Debbie D. DuFrene
+
+191
+oxford practicel grammar intermediate with answers gaao oxford
+Oxford Practice Grammar
+John Eastwood
+
+192
+ition thomas paune sarkar managerial economics
+Dictionary
+John Shakespear
+
+193
+introductionts cnnment engineering
+Software Systems Engineering
+Andrew P. Sage,James D. Palmer
+
+194
+volt vnva engineering insportation
+Current Trends in Engineering Practice
+Sneh Anand
+
+195
+vley tochemical fundamentals engineering second pdito
+Producing Table Olives
+Stan Kailis,David Harris
+
+196
+till baae introductions chemicalen to lengineerings jthermodynamics
+Introduction to CHEMICAL ENGINEERING THERMODYNAMICS
+GOPINATH HALDER
+
+197
+jas introduction to second chemical edition reactor analysis
+Introduction to Chemical Reactor Analysis
+Robert E. Hayes
+
+198
+deen analysis of transport phenomena second edition iternational oxford
+Analysis of Transport Phenomena
+William Murray Deen
+
+199
+creceed chemical enginferingt thermodyhamicst l
+Intro To Chem Engg Therm
+Smith
+
+200
+computer methods in chemicale lengineering
+Computer Methods in Chemical Engineering
+Nayef Ghasem
+
+201
+fluid chemical mechanics engineers for ns
+Solved Problems in Fluid Flow
+N. S. Srinivas
+
+202
+computer methods chemical lngineering
+Computer Methods in Chemical Engineering
+Nayef Ghasem
+
+203
+nevers fluid chemical mechanics engineers for editio
+Fluid Mechanics for Chemical Engineers
+Noel De Nevers
+
+204
+deen analysis of transport phenomena second edition iternational
+Analysis of Transport Phenomena
+William Murray Deen
+
+205
+pcered chemical engineeringt thermodyianist ld
+Elements of Heat Transfer
+Ethirajan Rathakrishnan
+
+206
+process shrevels sindustries chemical
+Shreve's Chemical Process Industries
+Randolph Norris Shreve,George T. Austin
+
+207
+milyvo rao ani therm introduction ermodynami ito revised edition ld
+None
+None
+
+208
+chemical process principles ditions oa km ra hougen watson ragatz
+TRANSPORT PHENOMENA (2nd Ed.)
+Bird
+
+209
+ailfy ochemical fundamentals lengineering secnd
+Elements of Chemical Reaction Engineering
+H. Scott Fogler
+
+210
+ie lalde introduction chemical engineering thermodynamics
+Introduction to chemical engineering thermodynamics
+Joseph Mauk Smith,Hendrick C. Van Ness
+
+211
+introduction second chemical edition reactor analysis
+Introduction to Chemical Reactor Analysis, Second Edition
+R.E. Hayes,J.P. Mmbaga
+
+212
+r2c1 and computer parallel architecture uprocessing 6 ss facs kas
+New Trends in Nanotechnology and Fractional Calculus Applications
+Dumitru Baleanu,Ziya B. Guvenc,J.A. Tenreiro Machado
+
+213
+manager systemss databases lement third dition
+The Network Manager's Handbook, Third Edition
+John M. Lusa
+
+214
+principles com techniques pilers and tools seconds editi pearson
+Compilers
+Alfred V. Aho,Ravi Sethi
+
+215
+lncntenbeck the design 808618088 programming and interfac family cing
+8086/8088 FAMILY: DESIGN PROGRAMMING AND INTERFACING
+Uffenbeck
+
+216
+mano digitallogic and computer design pearson
+Digital Logic & Computer Design
+Mano
+
+217
+p langsama data structures using
+Data Structures Using Java
+Langsam
+
+218
+wwy rivest roductions to algorithms
+Introduction To Algorithms
+Thomas H.. Cormen,Thomas H Cormen,Charles E Leiserson,Ronald L Rivest,Clifford Stein
+
+219
+yvac rao an thermodynamic introduction to s
+An introduction to thermodynamics
+Y. V. C. Rao
+
+220
+database system concepts beosshats
+Fundamentals of Database Systems
+Ramez Elmasri
+
+221
+navas javadeva labpri throughl matlab
+None
+None
+
+222
+db computer hydraulic connectip applicationst heory engineering prac tice
+Computer Applications in Hydraulic Engineering
+None
+
+223
+vallanguagepio pprocessing elakumar
+None
+None
+
+224
+error mathematical correction methods and algorithms coding
+Error Correction Coding
+Todd K. Moon
+
+225
+jeirh albright zappe winston and data analvsis simulation modeling ontimization 4th editions cengage
+Data Analysis, Optimization, and Simulation Modeling
+S. Christian Albright,Wayne L. Winston,Christopher James Zappe,Mark Nathan Broadie
+
+226
+toroo mallery spss windows zoupdati tenth edition pearson
+IBM SPSS Statistics 21 Step by Step
+Darren George,Paul Mallery
+
+227
+rajssekaran and neural genetic networks algorithms fuzzy logic prentice india hall
+NEURAL NETWORKS, FUZZY LOGIC AND GENETIC ALGORITHM
+S. RAJASEKARAN,G. A. VIJAYALAKSHMI PAI
+
+228
+tanerhaum vanston distributed principles randparadigms systems nd editior
+None
+None
+
+229
+pratap getting started with matlab oxford
+Getting Started with MATLAB 7
+Rudra Pratap
+
+230
+helfrick cooper modern and ameasurement electronic irinstrumentation techniques
+Modern Electronic Instrumentation and Measurement Techniques
+Albert D. Helfrick,William D. Cooper
+
+231
+sind wca doisiconats reciaies srst
+None
+None
+
+232
+wani algorithms fort vls third physical edition design automation
+Logic Synthesis and Verification
+Soha Hassoun,Tsutomu Sasao
+
+233
+advanced and peripherals mmicroprocessors ray bhurchandi
+ADVANCED MICROPROCESSORS & PERIPHERALS
+BHURCHANDI
+
+234
+aconcise introductions matlab
+A Concise Introduction to Matlab
+William John Palm
+
+235
+brp programmings principles and paradigms languages peconal editio
+Programming Languages: Principles and Paradigms
+Maurizio Gabbrielli,Simone Martini
+
+236
+jingtot computer aprogramming graphics approach scne editio
+Computer Graphics
+Steven Harrington
+
+237
+bet co the database complete book systems
+Database Systems: The Complete Book
+Hector Garcia-Molina
+
+238
+gila matlab an introduction with applications tto
+MATLAB
+Amos Gilat
+
+239
+vancte tanerbaum distributed principles undparadigms systems secon
+Distributed Systems
+Andrew S. Tanenbaum,Maarten van Steen
+
+240
+and the its internet protocols
+The Internet and Its Protocols
+Adrian Farrel
+
+241
+360 error mathematical correction methods and algorithms coding wile
+Error Correction Coding
+Todd K. Moon
+
+242
+marrington network security practical approach vii
+Network Security
+Jan L. Harrington
+
+243
+digital icomputer electronics third edition ses
+Digital Computer Electronics
+Albert P. Malvino
+
+244
+vei sahoo ctt projects
+Personal Effectiveness
+Alexander Murdock,Carol N. Scutt
+
+245
+mano computer system aarchilecture third edition pearson
+Advanced Computer Architecture
+K. A. Parthasarathy,A. Ramachandran,R. Purushothaman
+
+246
+programming principles and paradigms languages editio
+Programming Languages: Principles and Paradigms
+Maurizio Gabbrielli,Simone Martini
+
+247
+software engineering sommerville
+Software Engineering
+Ian Sommerville
+
+248
+kruse dls data program structures design in second edition peasn educatio
+Data Structures and Program Design in C
+Robert Kruse,Cl Tondo
+
+249
+pea pcos joes larsd problem solving with c
+The Glycemic Index Diet For Dummies
+Meri Raffetto, RD, LDN
+
+250
+sharma shankar shah algebral pearson
+Algebra I: A Basic Course in Abstract Algebra
+Rajendra Kumar Sharma,Sudesh Kumari Shah,Asha Gauri Shankar
+
+251
+third computer jedition architecture and organization
+Computer Architecture
+John L. Hennessy,David A. Patterson
+
+252
+kruse tondo leung moga data program structures design and int second edition pearson
+Ravenswood
+Tom Juravich,Kate Bronfenbrenner
+
+253
+compiler inc design
+Compiler Design in C
+Allen I. Holub
+
+254
+9n0 programmings world wwiths wide web 4th editic
+Programming With World Wide Web, 4/E
+Sebesta
+
+255
+prat getting started with matlab oxford
+Getting Started with MATLAB
+Rudra Pratap
+
+256
+lass unix rprogrammers and ron parson
+Parson's Diseases of the Eye
+Elsevier India
+
+257
+clcads sns architecture microcomputer 28086180831 programming and familys systems design  editions
+None
+None
+
+258
+wolt pbased modern design vlsi design th p
+Modern VLSI Design
+Wayne Wolf
+
+259
+mano computer system aarchitecture thirds edition pearson
+Digital Logic and Computer Design
+M. Morris Mano
+
+260
+stallings computer carchitecture organization designingo performance
+Computer Organization and Architecture
+William Stallings
+
+261
+scientists programming and for engineers with anplications reddy ziealer di
+C Programming for Scientists and Engineers with Applications
+Rama Reddy,Carol Ziegler
+
+262
+hopcroft jullman aho of the design computer and rlgorithms analysis dison mles
+Design & Analysis Of Computer Algorithms
+Alfred V Aho,John E Hopcroft
+
+263
+psns rson patter computer chitecture quantilative abdroach
+Computer Architecture
+John L. Hennessy,David A. Patterson
+
+264
+computing econfigurable now
+Introduction to Reconfigurable Computing
+Christophe Bobda
+
+265
+system simulation second edition
+Interactive Dynamic-System Simulation, Second Edition
+Granino A. Korn
+
+266
+practical introduction matlab programming and problem solving secon tton
+Matlab
+Stormy Attaway
+
+267
+wazrt vazidin the 3051 microcontroller and embedded systems seco edition pearson
+HCS12 Microcontroller and Embedded Systems Using Assembly and C with CodeWarrior
+Muhammad Ali Mazidi,Danny Causey
+
+268
+pearson romasi qata troductiont communications and networking
+Battleground: A-N
+Robin Andersen,Jonathan Alan Gray
+
+269
+understanding digital signal processing porson
+Understanding Digital Signal Processing
+None
+
+270
+revised numerical reprint computing with mailab
+Numerical Computing with MATLAB
+Cleve B. Moler
+
+271
+taynng comprehensi neural jetworks vefoundation secon dition
+Neural Networks
+Simon S. Haykin
+
+272
+pero genetic algorithms search optimization machine learning
+Genetic Algorithms in Search, Optimization, and Machine Learning
+David Edward Goldberg
+
+273
+225 computer systems networks approach cates
+Computer Networks
+Larry L. Peterson,Bruce S. Davie
+
+274
+soltware fundamentals engineering of
+Fundamentals of Software Engineering
+Rajib Mall
+
+275
+aconcise introduction matlab
+A Concise Introduction to Matlab
+William John Palm
+
+276
+knuth fundamental algorithms seco editio
+The Art of Computer Programming
+Donald E. Knuth
+
+277
+xxt bealtim systems carsoes reducation
+None
+None
+
+278
+proaf bauch modern systems ing communication matlab 3rd editons cengage learning
+Contemporary Communication Systems Using MATLAB
+John G. Proakis,Masoud Salehi,Gerhard Bauch
+
+279
+informationat theory coding and cryptography bose
+Information Theory, Coding and Cryptography
+Ranjan Bose
+
+280
+sherwani algorithms for vlsi third physical edition design automation
+Algorithms for VLSI Physical Design Automation
+Naveed A. Sherwani
+
+281
+microprocessors and interfacing
+Microprocessors and Interfacing
+N Senthil Kumar,M Saravanan,S Jeevananthan,Satish Shah
+
+282
+bhargava polymers ceramics igneerngmaterials and composites second edition
+ENGINEERING MATERIALS
+A. K. BHARGAVA
+
+283
+dod haykin oveen signals and systems
+Signals and Systems
+Simon Haykin,Barry Van Veen
+
+284
+nanotechnology sulabha principles kulkarni and practices third edition
+Nanotechnology: Principles and Practices
+Sulabha K. Kulkarni
+
+285
+raza eans design integrated fanalog circuits cmos
+Nanoelectronics, Circuits and Communication Systems
+Vijay Nath,Jyotsna Kumar Mandal
+
+286
+processing vincdal second edition jain
+Learning Processing
+Daniel Shiffman
+
+287
+ditions engineering chemistry jain jain
+ENGINEERING CHEMISTRY
+P. C. Jain,JAIN MONIKA
+
+288
+peteregam concepts operating system ninth cn
+None
+William Stallings
+
+289
+bird stewa lightf transport phenomena wile
+Transport Phenomena
+R. Byron Bird,Warren E. Stewart,Edwin N. Lightfoot
+
+290
+pearson fyoung managerial economics sixth tn
+Information Intelligence, Systems, Technology and Management
+Sumeet Dua,Sartaj Sahni,D.P. Goyal
+
+291
+pearson manufacturingip processes fift edita
+The Semiotic Engineering of Human-computer Interaction
+Clarisse Sieckenius De Souza
+
+292
+circuits licroelectronic ediion
+Microelectronic Circuits
+Adel S. Sedra,Kenneth Carless Smith
+
+293
+higher engineering mathematics
+Higher Engineering Mathematics 40th Edition
+B S Grewal
+
+294
+elementsof ikn duggal day lizzs
+Community Resources for Older Adults
+Robbyn R. Wacker,Karen A. Roberto
+
+295
+theoryofs structures volumet gupta pandit cupta bhg
+Theory Of Structures
+R. S. Khurmi
+
+296
+uncluding highwa principles expressways and rn and igin practices airport joi 93 of rid engineeringly ng dr dr lr nb kadiyali lal
+None
+None
+
+297
+engineering physicsi prof amit nkb yc chauhan bhatt sharma
+Engineering Physics
+D. K. Bhattacharya,Poonam Tandon
+
+298
+engineering circuiti itanalysis
+Learning the Art of Electronics
+Thomas C. Hayes,Paul Horowitz
+
+299
+bpp programming principles and paradigms languages
+Programming Languages: Principles and Paradigms
+Maurizio Gabbrielli,Simone Martini
+
+300
+including highway principles gexpressways and and yengineering practices airport of engineeringl dr dr lr nb kadiyali lal
+TRANSPORTATION ENGINEERING
+Dr. L.R. Kadiyali
+
+301
+surveying volii dlbc etashork lrunkyah punmia jain
+Surveying and Field Work - I (Hindi Medium)
+Dr. B. C. Punmia,Ashok Kr. Jain,Arun Kr. Jain
+
+302
+fluid hydraulic textbook ands mechanics iof amachines rk bansal yj
+A Textbook of Fluid Mechanics and Hydraulic Machines
+R. K. Bansal
+
+303
+es pearson product design gi8
+Finite Element Procedures
+Klaus-Jürgen Bathe
+
+304
+o mechanical metallurgy imetder
+None
+None
+
+305
+programming itansic balagurusamy
+None
+None
+
+306
+wa ltoro encineering cundamentals electrical al
+Engineering and Mining Journal
+None
+
+307
+basic engineering electrical hird edn kothari nagrath
+Basic Electrical Engineering
+I. J. Nagrath
+
+308
+notfo reeapor levenspiel chemical engineering reaction jes edition
+CHEMICAL REACTION ENGINEERING, 3RD ED
+Levenspiel
+
+309
+rutherfoord basic communication skills technology second edition pearson
+Basic Communication Skills For Technology, 2/E
+Rutherfoord
+
+310
+boylestad nashelsky electronicd devicest nd circuit theory larony inally
+Progressive Rock Guitar
+Glenn Riley
+
+311
+machine acoursed ectrical adesign irnets
+Design of Electrical Machines
+K. G. Upadhyay
+
+312
+nanotechnologies nanomaterials and design
+Nanomaterials, Nanotechnologies and Design
+Daniel L. Schodek,Paulo Ferreira,Michael F. Ashby
+
+313
+sot mechanical materials behavior secon editic burney pn ws
+Genomics of Plants and Fungi
+Rolf A. Prade,Hans J. Bohnert
+
+314
+mano computer system architecture third edition pearson
+Digital Logic and Computer Design
+M. Morris Mano
+
+315
+of unit ingineering chemical toperations mccabe smith seventh edition
+Unit Operations of Chemical Engineering
+Warren Lee McCabe,Julian Smith,Peter Harriott
+
+316
+circuits microelectronic xxford
+Microelectronic Circuits
+Adel S. Sedra,Kenneth Carless Smith
+
+317
+envronmentally lar sengar
+Biology For Class XII
+Dr. O. P. Saxena,Megha Bansal
+
+318
+daz communication systems
+Advanced Optical and Wireless Communications Systems
+Ivan B. Djordjevic
+
+319
+electronic millman devices and circuits millman halkias
+Electronic Devices and Circuits
+Jacob Millman,Christos C. Halkias
+
+320
+engineering circuit ianalysis
+Engineering Circuit Analysis
+William Hart Hayt,Jack Kemmerly,Steven M. Durbin
+
+321
+introductiont flye fluid mechanics machines ani som biswas chakraborty
+Advancements of Medical Electronics
+Somsubhra Gupta,Sandip Bag,Karabi Ganguly,Indranath Sarkar,Papun Biswas
+
+322
+analysis process and systems control
+Process Systems Analysis and Control
+Steven E. LeBlanc,Donald R. Coughanowr
+
+323
+principles electromagnetics 0th editio asian sadiku kulkarni oxford
+Mental Measurements Year
+Oscar Krisen Buros
+
+324
+editions networks systei and d roy choudhury
+Networks and Systems
+D. Roy Choudhury
+
+325
+digital design fourtl edit pearson
+Digital Design: For Anna University, 4/e
+None
+
+326
+labo electric machines
+Bulletin of the United States Bureau of Labor Statistics
+None
+
+327
+pearson keat pong daner managerial economics sixth pons
+Poisoning Diagnosis and Treatment
+J.A. Vale,T.J. Meredith
+
+328
+engineeringlties glectromagnetics  akhtar
+None
+None
+
+329
+powers analysis and system design br gupta quyr 444
+Power System
+B R Gupta
+
+330
+rird lightfoot jewart phenomena transport secon cko
+None
+None
+
+331
+krantz simmons theory differential technique and practice equations
+Differential Equations
+Steven G. Krantz
+
+332
+principleso hlectomagnetics 6th sadiku kulkarni oxford
+Principles of electromagnetics
+Matthew N. O. Sadiku,Shrikrishna V. Kulkarni
+
+333
+eeecrongets edminister
+Electric Circuits, 5E (Sos) (Sie)
+Nahvi
+
+334
+unit unit and operations processes narayanan bhattacharya
+Unit Operations and Unit Processes-Vol. 1, 2e (HB)
+Narayanan; Bhattacharya
+
+335
+drf mechanics istrength vol materialsi sofstructures
+Mechanics of Materials
+Ferdinand Pierre Beer,Elwood Russell Johnston,John T. DeWolf,David Francis Mazurek,Sanjeev Sanghi
+
+336
+circuits licroelectronic hedition ofordy
+Microelectronic circuits
+Adel S. Sedra,Kenneth Carless Smith
+
+337
+engineeringl lelectomagnetics
+Engineering Electromagnetics
+Nathan Ida
+
+338
+haykin communication systems ts
+Communication systems
+Simon S. Haykin
+
+339
+wythe micropro lthe cessor sobsisosoa rch prog zappls gaonkar rs
+None
+None
+
+340
+rachal system operating concepts psng
+Silent Spring
+Rachel Carson
+
+341
+communication systems seeoc
+The Foundations of Communication in Criminal Justice Systems
+Daniel Adrian Doss,William H. Glover Jr.,Rebecca A. Goza,Michael Wigginton Jr.
+
+342
+operations trys
+Taming Java Threads
+Allen Holub
+
+343
+soil foundation mechanics and engineering pearson
+Soil Mechanics and Foundation Engineering, 2e
+P. Purushothama Raj
+
+344
+communication systems sozg
+Optical Communication Systems for Smart Dust
+None
+
+345
+soil foundation mechanics and engineering pearson
+Soil Mechanics and Foundation Engineering, 2e
+P. Purushothama Raj
+
+346
+levenspiel engineering emicalreaction dhurd editio
+CHEMICAL REACTION ENGINEERING, 3RD ED
+Levenspiel
+
+347
+steel design structures dry dayaratnam ciy
+Design Of Steel Structures
+Pasala Dayaratnam
+
+348
+of unit chemicali operations engineering jats
+Unit Operations of Chemical Engineering
+WARREN L AUTOR MCCABE,JULIAN C AUTOR SMITH
+
+349
+notfor levenspiel chemical engineering reaction pas editio
+Chemical reaction engineering
+Octave Levenspiel
+
+350
+dutta heat principles and transfer applications
+HEAT TRANSFER
+DUTTA, BINAY K.
+
+351
+foundation princioles jeign pand of practices systems third edition kurian
+Land Tenure, Gender and Globalisation
+Dzodzi Tsikata,Pamela Golah
+
+352
+modern iron making vr drns tupkary tupkary
+Modern Iron Making Handbook
+R. H. Tupkary,V. R. Tupkary
+
+353
+levenspiel chemical engineering reaction edition
+Chemical reaction engineering
+Octave Levenspiel
+
+354
+of unit chemical operations engineering saren
+Unit Operations of Chemical Engineering
+WARREN L AUTOR MCCABE,JULIAN C AUTOR SMITH
+
+355
+computer fecture system mano ede ivt
+Encyclopedia of Healthcare Information Systems
+Wickramasinghe, Nilmini
+
+356
+loperations asstransfer
+Transport Processes and Unit Operations, Christie J. Geankoplis, 3rd Edition, 1993
+Prentice-Hall International, Inc
+
+357
+stalline ciples cryptography and practices and network security mearson
+Cryptography and Network Security
+None
+
+358
+evenspiel chemical engineering lreaction
+Chemical reaction engineering
+Octave Levenspiel
+
+359
+dutta heat principles and transfer applications
+HEAT TRANSFER
+DUTTA, BINAY K.
+
+360
+heat iln si unitsl transfer holman ahattachaual
+Heat and Mass Transfer
+B. M. Smol'skii,A. V. Lykov
+
+361
+stewan lightfo transport phenomena edition wile
+Transport Phenomena
+R. Byron Bird,Warren E. Stewart,Edwin N. Lightfoot
+
+362
+product design and development ulrich eppinger
+Product Design and Development
+Karl T. Ulrich
+
+363
+rao mechanical vibrations fourth dition pearson
+The Finite Element Method in Engineering
+Singiresu S. Rao
+
+364
+theory and engineering optimization practice singiresu rao eane
+Engineering Optimization
+S. S. Rao
+
+365
+and air frigeration conditioning arora
+Refrigeration and Air Conditioning
+C. P. Arora
+
+366
+mashtranster operations
+Operations Management
+William J Stevenson
+
+367
+dutta heat principles and transfer applications
+HEAT TRANSFER
+DUTTA, BINAY K.
+
+368
+lemenspiel chemicalp engineering reaction editio
+Chemical reaction engineering
+Octave Levenspiel
+
+369
+engineeringltded electromagnetics cs hayt narin akhtar
+None
+None
+
+370
+haykin communication systems editio
+Communication Systems, 3Rd Ed
+Simon Haykin
+
+371
+principleso uanfraldrening gaudinam
+Principles
+Ray Dalio
+
+372
+circuitss oelectronics sendra ass smith edliv kc
+Antiracist Writing Assessment Ecologies
+Asao B. Inoue
+
+373
+embedded systems
+Embedded Systems 2E
+Raj Kamal
+
+374
+roge adar mathematicaly elements tor computer graphics second edition
+Distributed Systems
+Andrew S. Tanenbaum,Maarten van Steen
+
+375
+operations stransfer engey
+Food Processing Operations Analysis
+Das
+
+376
+janeno operating systems modern
+Modern Operating Systems
+Andrew S. Tanenbaum,Herbert Bos
+
+377
+of unit chemicali operations lengineering seeee
+Unit Operations of Chemical Engineering
+WARREN L AUTOR MCCABE,JULIAN C AUTOR SMITH
+
+378
+bird jewa lightfoot transport phenomena second editi 235
+A Companion to the Archaeology of the Roman Republic
+Jane DeRose Evans
+
+379
+nanotechnologyp sulabha principles kulkarni and practices third edition
+Nanotechnology: Principles and Practices
+Sulabha K. Kulkarni
+
+380
+and slecnicam electrical acourse nmentation in land fasurements csaws
+A Course In Electronics & Electrical Measurements And Instrumentation
+B.J. Gupta
+
+381
+and artificial intelligent intelligence systems iadis oxford
+The Oxford Handbook of Affective Computing
+Rafael A. Calvo,Sidney D'Mello,Jonathan Gratch,Arvid Kappas
+
+382
+t vahi naray specification embeddedhystems andi desisns pearson
+None
+None
+
+383
+process heattransfer
+Process Heat Transfer
+Donald Quentin Kern
+
+384
+of unit chemical toperations engineering iez
+Unit Operations of Chemical Engineering
+WARREN L AUTOR MCCABE,JULIAN C AUTOR SMITH
+
+385
+ferreira nanoteghnologish nanomaterials design
+None
+None
+
+386
+evenspiel chemical engineering reaction co ces
+Chemical reaction engineering
+Octave Levenspiel
+
+387
+kers guide cryptograph and standards dent mitchell
+Security in Computing Systems
+Joachim Biskup
+
+388
+systems programming oxford
+Systems Programming
+Srimanta Pal
+
+389
+ogramming customizing and the pic microcontroller hidedition
+Programming and Customizing the PIC Microcontroller
+Myke Predko
+
+390
+axv moon lrror mathematical acorrection methods and algorithms coding
+Error Correction Coding
+Todd K. Moon
+
+391
+sedgewinc algorithms sicond edition lv
+An Introduction to the Analysis of Algorithms
+Robert Sedgewick, Philippe Flajolet
+
+392
+tenenb data using cand structures chit secon
+Data Structures Using C
+Aaron M. Tenenbaum
+
+393
+high mysol performance zaitsey schwartzy tkachenko 1sx cit oreilly
+None
+None
+
+394
+drf c with computer logical emphasis on aided design vlsi fourt
+Computer aided logical design with emphasis on VLSI
+Fredrick J. Hill,Gerald R. Peterson
+
+395
+oasol demystifiele oppel lz 1at
+None
+None
+
+396
+concepts distributed and design systems econ edite dulourist ollimores kindbe
+None
+None
+
+397
+cee software level packages made module simple vl vola satish jain
+Penny Loves Pink
+Cori Doerrfeld
+
+398
+seconded design embedded and verification systems
+Embedded Systems Handbook
+Richard Zurawski
+
+399
+yvascript jquery secor
+Jquery In Action
+Bear Bibeault,Yehuda Kats
+
+400
+the icrocomputers 8080 interfacing 8085 and and and z80 troubleshooting microprocessors programming
+Microcomputing
+None
+
+401
+ota concepts and networks protocols secona idition kasera
+Network Security : PRIVATE Communication in a PUBLIC World
+Radia Perlman,Charlie Kaufman,Mike Speciner
+
+402
+avliw approach embeddedlon architecture compilers acomputing and tools
+Embedded Computing
+Joseph A. Fisher,Paolo Faraboschi,Clifford Young
+
+403
+java networking
+Java Network Programming
+Elliotte Rusty Harold
+
+404
+bricius nontoylsidesign
+None
+None
+
+405
+objectives databasem system functions cmines emanagement caration
+Management of Information Systems
+Maria Pomffyova
+
+406
+goldberg geneticalgorithm earch optimization machine learning
+Genetic Algorithms in Search, Optimization, and Machine Learning
+David Edward Goldberg
+
+407
+senal rootkit blunden
+The Rootkit Arsenal: Escape and Evasion
+Bill Blunden
+
+408
+borens trablay data with nintroductions structures applications to second edition
+Introduction to Computer Science
+Jean-Paul Tremblay,Richard B. Bunt
+
+409
+elsamie shahieen elrabaie ahmed faragallah alshebeili elashry image rencryption
+Liquid ring vacuum pumps and compressors
+W. Hakim Faragallah
+
+410
+ligorithms
+Automata, Languages and Programming
+M. Nielsen,E. M. Schmidt
+
+411
+algorithms
+Introduction To Algorithms
+Thomas H.. Cormen,Thomas H Cormen,Charles E Leiserson,Ronald L Rivest,Clifford Stein
+
+412
+perl cookbook christiansen torkington 689 1c26 oreil
+Perl cookbook
+Tom Christiansen,Nathan Torkington
+
+413
+pros oracle amming plsol
+Computerworld
+None
+
+414
+amber mining dredition
+Latvia Mineral & Mining Sector Investment and Business Guide
+Inc Ibp
+
+415
+the hxyintrodction spiritofs lmodern programming mullish ooper jaico book
+The Spirit Of C
+Mullish Cooper
+
+416
+sipser theoryof computation cengage learning
+Introduction to the Theory of Computation
+Michael Sipser
+
+417
+introd imputer algorithmic ductions vto science approach editions bos
+Speech and Computer
+Andrey Ronzhin,Rodmonga Potapova,Nikos Fakotakis
+
+418
+covers spins cmpates crerene fedora enterprise 78x linux redhat petersen
+A Practical Guide to Fedora and Red Hat Enterprise Linux
+Mark G. Sobell
+
+419
+paralerprograms
+None
+None
+
+420
+system database concepts
+Database Systems
+S. K. Singh
+
+421
+system atabase concepts ctont paane sr sudar
+Comprehensive Cobol
+Andrew S. Philippakis
+
+422
+introduction to pression srie
+Manuel d'escrime
+B. de Bast
+
+423
+axl haykin coudoehencneel neural networks foundation seco tn
+None
+None
+
+424
+sa mysql cookbook dubois 1sp
+Computational Intelligence: Research Frontiers
+Jacek M. Zurada
+
+425
+flementson theorys formation
+Automated Theory Formation in Pure Mathematics
+Simon Colton
+
+426
+jpegzooo image ecompression stamoards fundamenta practice taubmar marcellin
+JPEG2000 Image Compression Fundamentals, Standards and Practice
+David Taubman,Michael Marcellin
+
+427
+widrow and kollar quantization noise sates camerid
+None
+None
+
+428
+dcatle discretet polessing la oppenheim schafer buck prenuces
+None
+None
+
+429
+vohs svy hartley zisserman and seco multiple couedition view geometry m ptt
+Multiple View Geometry in Computer Vision
+Richard Hartley,Andrew Zisserman
+
+430
+blahut algebraic codes jor data transmission cambri
+Algebraic Codes for Data Transmission
+Richard E. Blahut
+
+431
+wavelet tour of signal processing mallats
+A Wavelet Tour of Signal Processing
+Stéphane G. Mallat
+
+432
+sidnal linear processing systems
+Signal Processing and Linear Systems
+Bhagwandas Pannalal Lathi
+
+433
+haykin neural networks
+Neural Networks
+Simon Haykin
+
+434
+mms teach bourself t
+Designing with field-effect transistors
+Edwin S. Oxner,Siliconix Incorporated
+
+435
+learning python lutz
+Learning Python
+Mark Lutz
+
+436
+horsiman computings java ingconcepts essentials
+Computing Concepts with Java Essentials
+Cay S. Horstmann
+
+437
+ascript tbe definitive guide flaragan
+JavaScript
+David Flanagan
+
+438
+vms teach yourse iwantt taai
+Overcoming Your Alcohol, Drug & Recovery Habits
+James DeSena
+
+439
+lajoie drimer
+Protein and Peptide Mass Spectrometry in Drug Discovery
+Michael L. Gross,Guodong Chen,Birendra Pramanik
+
+440
+lastering ba fatis narrvavis
+None
+None
+
+441
+press teukolsky vetterling flannery ses ictionatized cipesin merical
+Numerical Recipes in Pascal (First Edition)
+William H Press,William H. Press,Brian P. Flannery,Brian P.. Flannery,Saul A. Teukolsky,William T. Vetterling,William T.. Vetterling
+
+442
+using maimab grophics vaadoa
+Tale of a Wasteland
+None
+
+443
+multicore perogramming
+Multi-core Programming
+Shameem Akhter,Jason Roberts
+
+444
+microsoft visualt ct net inx
+Sams Teach Yourself Microsoft Visual C# .NET 2003 in 24 Hours
+James D. Foxall
+
+445
+learning opency bradski kachler
+Learning OpenCV 3
+Adrian Kaehler,Gary Bradski
+
+446
+gramming perl bataen wal orwant
+Programming Perl
+Tom Christiansen,Larry Wall,brian foy,Jon Orwant
+
+447
+net visual step by ch sted 2003 micro
+Programming Visual Basic .NET
+Jesse Liberty
+
+448
+the user modeling unified guide language booch rumbaugh jacobson
+The Unified Modeling Language User Guide
+Grady Booch
+
+449
+achecaria elanguage okeve car vacconat
+None
+None
+
+450
+sams teach yourself 1t
+Unreal Engine 4 Game Development in 24 Hours, Sams Teach Yourself
+Aram Cookson,Ryan DowlingSoka,Clinton Crumpler,Tim Johnson
+
+451
+learning python lutz
+Learning Python
+Mark Lutz
+
+452
+eucld the the thirteen elements bookso voli books land dane cooas
+The Works of John Adams, Second President of the United States
+John Adams
+
+453
+unfaraigebra
+None
+None
+
+454
+partial differential niains uction equations
+Lectures on Partial Differential Equations
+I. G. Petrovsky
+
+455
+ross elementary analysism the teorvofc ecalculus
+Elementary Analysis
+Kenneth A. Ross
+
+456
+brown churchill complex variables and applications
+Complex Variables and Applications
+James Ward Brown,Ruel V. Churchill
+
+457
+the 1183 graphing practice calculator of enhanced statistics
+The Practice of Statistics
+Dan Yates,David S. Moore,Daren S. Starnes
+
+458
+van liat  wilson courset second edition combinatorics catie
+New York Magazine
+None
+
+459
+linear algebra i2 introduction
+Introduction to Linear Algebra
+Serge Lang
+
+460
+sutes diprim differential boundary elemen value intar equations problems nd
+Partial Differential Equations in Mechanics 1
+A.P.S. Selvadurai
+
+461
+steven pinker retitine vhod works
+How the Mind Works
+Steven Pinker
+
+462
+computer networks
+Computer Networks
+Tanenbaum
+
+463
+data structures and algorithms hopchoint
+Algorithms and Data Structures
+Niklaus Wirth
+
+464
+cover enformatonitheory
+None
+None
+
+465
+ipegzo0o image compression standards sandi fumdamentals practice marcelin
+JPEG2000 Image Compression Fundamentals, Standards and Practice
+David Taubman,Michael Marcellin
+
+466
+proakis uno moonen rader nibas proudle aborithmsfors statistical signal processing
+Algorithms for Statistical Signal Processing
+John G. Proakis
+
+467
+hamacher vranesic zaky computer organization fourth edition
+Computer Organization 5th Edition
+Carl Hamacher,Zvonko Vranesic
+
+468
+rice mathematical statistics and data analysis second edition
+Mathematical Statistics and Data Analysis
+John A. Rice,JOHN A AUTOR RICE
+
+469
+ced croelectronic
+Applied Reliability and Quality
+Balbir S. Dhillon
+
+470
+wicker error digital control commun ation systems and storag
+Error Control Systems for Digital Communication and Storage
+Stephen B. Wicker
+
+471
+jpegz00o mac compressio standarosan fundamen apractice lvbtns marcellin
+None
+None
+
+472
+and widrow kollar quantization noise cambrid
+Quantization Noise
+Bernard Widrow,István Kollár
+
+473
+discretet processin  oppenheim schafer buck
+Discrete-Time Signal Processing
+Oppenheim
+
+474
+hartley zisserman and multiple second edition view geometry caus cgot
+Intelligent Computing in Signal Processing and Pattern Recognition
+De-Shuang Huang,George William Irwin
+
+475
+blahut algebraic codes for data transmission cambri
+Algebraic Codes for Data Transmission
+Richard E. Blahut
+
+476
+wavelet tour q signal processing mallat secon edition
+A Wavelet Tour of Signal Processing
+Stephane Mallat
+
+477
+sisnal linear processing systems
+Signal Processing and Linear Systems
+Bhagwandas Pannalal Lathi
+
+478
+neural networks
+Neural Networks
+Raul Rojas
+
+479
+optimizing applications for multicore processors
+Multicore Software Development Techniques
+Robert Oshana
+
+480
+design patterns gamma johnson helm missides
+Design Patterns
+Erich Gamma,Richard Helm,Ralph Johnson,John Vlissides
+
+481
+ps crtes opedia file formats
+The World Book Encyclopedia
+None
+
+482
+android application development
+Android Application Development All-in-One For Dummies
+Barry Burd
+
+483
+theo programming language
+o++oPS The simplest Programming Language
+Klaus Benecke
+
+484
+and generic thesti programming austern
+Generic Programming and the STL
+Matthew H. Austern
+
+485
+lctt templates vandevorde josuttls
+None
+None
+
+486
+jt with programming ot3
+Dr. Dobb's Journal of Software Tools for the Professional Programmer
+None
+
+487
+realime frendering maseconded tedition akenine haines moller
+None
+None
+
+488
+fatz the software optimization cookbook
+The Software Optimization Cookbook
+Richard Gerber,Aart J. C. Bik,Kevin Smith,Xinmin Tian
+
+489
+ertonal dbenoces mtd
+None
+None
+
+490
+viune performance analyzer essentials
+The Essentials of Performance Analysis
+Mike Hughes,Ian Franks
+
+491
+refachana wiok the ciprocramming language
+None
+None
+
+492
+and computer parallel architecture processing
+Introduction to Parallel Processing
+Behrooz Parhami
+
+493
+the unified development software process jacobson booch rumbaugh
+The Unified Software Development Process
+Jacobson
+
+494
+opengl fifth edition programming guide shreiner opengl neider arb woo davis
+OpenGL Distilled
+Paul Martz
+
+495
+the inventor mentor wernecke
+The Inventor Mentor
+Josie Wernecke
+
+496
+ctt gui programming with oto
+C++ GUI Programming with Qt 4
+Jasmin Blanchette,Mark Summerfield
+
+497
+symbian os ct for mobile phones harsons
+The Symbian OS Architecture Sourcebook
+Ben Morris
+

@@ -15,8 +15,8 @@ import scraper
 
 def full_pipeline(img_path, submission_id = "000000000"):
     
-    img_path = main.BASE_PATH + "/data/05.jpg"
-    print(img_path)
+    #img_path = main.BASE_PATH + "/data/05.jpg"
+    #print(img_path)
 
     img = cv2.imread(img_path)
 

@@ -8,11 +8,12 @@ import matplotlib.pyplot as plt
 from imutils.object_detection import non_max_suppression
 
 sys.path.append('../')
-sys.path.append('crnn_pytorch/')
+sys.path.append(main.BASE_PATH + '/models/crnn_pytorch/')
 
 import main
 import server
 
+'''
 import torch
 from torch.autograd import Variable
 import utils
@@ -22,7 +23,7 @@ from PIL import Image
 import crnn_pytorch.models.crnn as crnn
 
 
-model_path = 'crnn_pytorch/data/crnn.pth'
+model_path = main.BASE_PATH + '/models/crnn_pytorch/data/crnn.pth'
 alphabet = '0123456789abcdefghijklmnopqrstuvwxyz'
 
 model = crnn.CRNN(32, 1, 37, 256)
@@ -30,7 +31,7 @@ if torch.cuda.is_available():
     model = model.cuda()
 print('loading pretrained model from %s' % model_path)
 model.load_state_dict(torch.load(model_path))
-
+'''
 
 def text_recognition(image):
     orig_img = image.copy()

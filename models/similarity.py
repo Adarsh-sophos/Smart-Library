@@ -46,7 +46,7 @@ def get_idf(word):
 
 
 
-def calculate_book_score(book):
+def calculate_book_score(book_info, tokens):
     '''
     Calculates the 'similarity' of a book object, that is how close the tokens
     that were detected in the image align with the actual information available
@@ -58,16 +58,16 @@ def calculate_book_score(book):
     '''
 
     # Get book variables
-    book_info = book.format_raw_book_info_to_words_list()
-    tokens = book.format_raw_spine_words_to_words_list()
+    #book_info = book.format_raw_book_info_to_words_list()
+    #tokens = book.format_raw_spine_words_to_words_list()
 
     # Preprocess the variables
     book_info = preprocess_words(book_info)
     tokens = preprocess_words(tokens)
 
     # Calculate similarity score
-    #similarity = single_token_levenshtein(tokens, info)
-    similarity = single_token_inverse_weighted_levenshtein_idf(tokens, book_info)
+    similarity = single_token_levenshtein(tokens, book_info)
+    #similarity = single_token_inverse_weighted_levenshtein_idf(tokens, book_info)
 
     return similarity
 
@@ -91,6 +91,8 @@ def preprocess_words(words):
 
     # Remove non-strings
     processed_words = [word for word in processed_words if word != '']
+
+    #print(processed_words)
 
     return processed_words
 
@@ -192,7 +194,7 @@ def single_token_levenshtein(tokens, book_words):
             temp_distances.append(distance)
 
         try:
-            minimum_distance = np.min(temp_distances)/len(token)
+            minimum_distance = np.min(temp_distances)
         except:
             minimum_distance = MAX_SIMILARITY
 
