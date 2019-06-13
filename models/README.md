@@ -30,7 +30,7 @@
   1. Build a book inventory from only the images of bookshelves.
   2. Help users quickly locate the book they are looking for.
 
-![Working](/src/images/Working.png)
+![Working](readme_src_images/images/Working.png)
 
 ## Ideas
 - After spine recognition, the user can select individual spines in the phone’s viewﬁnder to obtain more information about a particular book, without ever having to take that book off the bookshelf.
@@ -48,14 +48,14 @@ Book spine segmentation is a critical component of our system since each book is
 Recognizing book spines in a photo of a bookshelf is very challenging because each spine has a small surface area containing few image features and the other spines’ image features act as clutter in feature-based image matching.
 
 ## First Approach (Low-level Feature Based)
-![Book Spine Segmentation](/src/images/Book-Spine-Segmentation.png)
+![Book Spine Segmentation](readme_src_images/images/Book-Spine-Segmentation.png)
 - First, a Canny edge map is extracted from the query image. In the Canny edge map, the crevices between book spines appear as long and straight edges, while the text and graphics on the spines appear as short and curved edges.
 - Connected components are detected in the edge map, and all components containing fewer pixels than a lower threshold are removed.
 - Next, a Hough transform is calculated from the edge map with short edges removed. It is found that removal of short edges improves the resolution of peaks in the Hough transform.
 - To estimate the dominant angle θ<sub>spines</sub> of the spines, the Hough peak occurrences are binned in an angular histogram. The bin attaining the highest count in the angular histogram yields the spines’ dominant angle θ<sub>spines</sub>.
 - Given the dominant angle θ<sub>spines</sub> of the book spines, we search for long straight lines with angle near θ<sub>spines</sub>. Long straight lines can be detected from the Canny edge map.
 
-![Segmented Boundaries](/src/images/Segmented-Boundaries.png)
+![Segmented Boundaries](readme_src_images/images/Segmented-Boundaries.png)
 
 ## Second Approach (CNN Based)
 Performance of most existing approaches is limited by book spine segmentation. Hand-craft features based book spine segmentation suffers from common image distortion and low contrast between books.
@@ -77,7 +77,7 @@ Two approaches -
 - Each of the segmented spines is individually matched against a database of book spines.
 - First, a set of scale and rotation-invariant features, or a bag-of-visual-features (BoVF), are extracted from each query spine.
 - Since achieving low query latency is very important for interactive book searches, we employ SURF features, which are much faster to compute than and offer comparable performance to SIFT features.
-![Book Spine Recognition](/src/images/Book-Spine-Recognition.png)
+![Book Spine Recognition](readme_src_images/images/Book-Spine-Recognition.png)
 - SURF features are extracted from each database spine image. The set of all database features is used to train a vocabulary tree with 6 levels and 106 leaf nodes.
 - For fast search through a large database of book spines, each query spine’s BoVF is quantized through a vocabulary tree. Soft binning is used to mitigate quantization errors.
 - The quantized BoVF of the query spine forms a tree histogram, counting how often each node in the vocabulary tree has been visited.
@@ -116,7 +116,7 @@ In this system, book spine images are identiﬁed based on the recognized text, 
 - Distortions in real scene images make recognition a very different and challenging task from a standard OCR system.
 - OCR system, such as Tesseract (Smith, 2007), perform poorly on image taken of natural scenes.
 - Because the spines often contain non-text graphics, uneven illumination, and varying fonts, the OCR engine almost always gives unrecognizable text outputs.
-![OCR Readings](/src/images/OCR-Readings.png)
+![OCR Readings](readme_src_images/images/OCR-Readings.png)
 
 ### 2.2.2 Deep Learning Based Approach
 Build a deep neural network-based scene text reading system. For text recognition, adopt a deep sequential labeling model based on convolutional and recurrent neural architectures.
@@ -129,7 +129,7 @@ Use a per-timestep classiﬁcation loss in tandem with a revised version of the 
 -  A CNN at the bottom learns features from the images which are then composed as feature sequences that are subsequently fed into an RNN for sequential labeling.
 - A bidirectional Long Short-Term Memory (B-LSTM) model is applied on top of the learned sequential CNN features to exploit the interdependence among features.
 
-![Network-Architecture](/src/images/Network-Architecture.png)
+![Network-Architecture](readme_src_images/images/Network-Architecture.png)
 
 #### 2.2.2.2 CTC Loss
 - Sequences X (prediction) and Y (target) have diﬀerent lengths, so we adopt CTC loss to allow an RNN to be trained  for sequence labeling task without exact alignment.
