@@ -70,10 +70,8 @@ def full_pipeline(img_path, submission_id = "000000000"):
             # Couldn't get isbn10 from amazon link (or there was no amazon link)
             isbn10 = None
 
-        # Check if number is an isbn10; if not, skip the rest
-        if not scraper.is_isbn10(isbn10, debug = False):
-            print(isbn10, "is not a right ISBN.")
-            continue
+        
+        # USING AMAZON PRODUCTS API
 
         """
         # Create amazon bottlenose object
@@ -86,16 +84,27 @@ def full_pipeline(img_path, submission_id = "000000000"):
 
         # Try to get info from amazon products api
         book_info, book_price = scraper.query_amazon_products_api(isbn10, amazon)
-        book_info['api'] = 'amazon products'
+        book_info['api'] = 'Amazon Products API'
         """
 
-        book_info, content = scraper.query_google_books_api(isbn10, type = "isbn", debug = False)
-        book_info['api'] = 'amazon and google books api'
 
-        #print(book_info)
-        if(content["totalItems"] == 0):
+        #FIRST SEARCH ON GOOGLE AND THEN SEARCH ON GOOGLE BOOKS API
+
+        # Check if number is an isbn10; if not, skip the rest
+        if not scraper.is_isbn10(isbn10, debug = False):
+            print(isbn10, "is not a right ISBN.")
+
             book_info, content = scraper.query_google_books_api(search_query, type = "title", debug = False)
-            book_info['api'] = 'google books api'
+            book_info['api'] = 'Google Books API'
+
+        else:
+            book_info, content = scraper.query_google_books_api(isbn10, type = "isbn", debug = False)
+            book_info['api'] = 'Amazon and Google Books API'
+
+            #print(book_info)
+            if(content["totalItems"] == 0):
+                book_info, content = scraper.query_google_books_api(search_query, type = "title", debug = False)
+                book_info['api'] = 'Google Books API'
 
         print(book_info)
 
@@ -133,4 +142,4 @@ def unpickle_all_books():
 
 
 if __name__ == '__main__':
-    full_pipeline("")
+    full_pipeline(main.BASE_PATH + "/data/05.jpg")

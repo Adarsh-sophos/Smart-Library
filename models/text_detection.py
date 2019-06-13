@@ -7,11 +7,13 @@ import pytesseract
 import matplotlib.pyplot as plt
 from imutils.object_detection import non_max_suppression
 
-sys.path.append('../')
-sys.path.append(main.BASE_PATH + '/models/crnn_pytorch/')
+sys.path.append('..')
 
 import main
 import server
+
+sys.path.append(main.BASE_PATH + '/models/crnn_pytorch/')
+
 
 '''
 import torch
@@ -199,21 +201,30 @@ def get_bounding_boxes(orig_image, boxes, rW, rH, padding, origW, origH, submiss
         # (3) an OEM value, in this case, 7 which implies that we are
         # treating the ROI as a single line of text
         config = ("-l eng --oem 1 --psm 7")
-        #roi = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
-        #text = pytesseract.image_to_string(roi, config=config)
 
-        text = text_recognition(roi)
+        """
+        ---------------------------------------------------
+        IF YOU WANT TO USE TESSERACT FOR TEXT RECOGNITION.
+        ---------------------------------------------------
+        """
+
+        roi = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
+        text = pytesseract.image_to_string(roi, config=config)
+
+
+        """
+        -----------------------------------------------------------------------------------------------
+        IF YOU WANT TO USE CRNN DEEP LEARNING MODEL FOR TEXT RECOGNITION.
+        FOR THIS, YOU HAVE TO SETUP THE FOLLOWING REPOSITORY FIRST:
+        https://github.com/meijieru/crnn.pytorch
+
+        IF YOU ARE ABLE TO SETUP THE ABOVE REPOSITORY, THEN YOU CAN USE THE FOLLOWING TEXT RECOGNITION
+        BY UNCOMMENTING THE CODE AT THE TOP OF THIS FILE.
+        -----------------------------------------------------------------------------------------------
+        """
+
+        #text = text_recognition(roi)
         
-        """
-        temp = ""
-        for c in text:
-            if((ord(c) <= 122 and ord(c) >= 97) or (ord(c) <= 90 and ord(c) >= 65)):
-                temp += c
-            else:
-                temp += ""
-
-        text = temp
-        """
         
         if(debug):
             plt.imshow(roi)
